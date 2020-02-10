@@ -2,9 +2,9 @@ body {
     font-family: sans-serif;
   }
   
-  * {
+  /* * {
     border: 1px solid red;
-  }
+  } */
   #sign-up-container {
     height: 500px;
     width: 1000px;
@@ -21,7 +21,7 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    position: relative;
+    /* position: relative; */
   }
   .overlay {
     height: 100%;
@@ -50,37 +50,41 @@ body {
   }
   
   .field1 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* display: inline-block; */
     margin: 15px;
     box-sizing: border-box;
-  }
+      }
+  
   input,
   select {
     display: block;
     width: 230px;
-    border-radius: 1px;
-    border-color: #acbbcb;
+    border-radius: 2px;
+    border-color: #A4B4C5;
+    /* border-color: red; */
     border-style: solid;
     box-sizing: border-box;
+    padding: 10px;
+/* border-style: inherit;  */
   }
   select {
     background-color: #A4B4C5;
   }
   input:hover,
-  select:hover {
+  select:hover, input:focus,
+  select:focus {
     border-color:  #66B76F;
   }
-
-  #sign-up-form {
-    border: 2px solid cyan;
+    #sign-up-form {
+    /* border: 2px solid cyan; */
     width: 60%;
   }
   #sign-up-form > * {
     margin-bottom: 20px;
   }
   .field-row {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
   }
   .hero-button {
@@ -97,11 +101,7 @@ body {
     border: 2px solid;
     /* opacity: 0.8; */
   }
-  .field-input {
-      padding: 10px;
-border-style: inherit;  
-}
-  .field-name {
+    .field-name {
       font-size: 12px;
       font-weight: bold;
       color: #243444;
@@ -113,15 +113,13 @@ border-style: inherit;
       font-weight: bold;
       width: 230px;
       font-size: 12px;
-  }
- 
- 
+  } 
 form {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 #all-fields {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   width: 100%;
 }
 
@@ -140,4 +138,12 @@ select {
 a {
   color:  #66B76F;
   font-size: 12px;
+}
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  color: red;
 }

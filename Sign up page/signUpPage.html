@@ -25,11 +25,11 @@
           <div id="all-fields" class="flex flex-row wrap">
               <div class="field1">
                 <label for="first-name" class="field-name">First Name</label>
-                <input type="text" id="first-name" placeholder="type here..." class="field-input"/>
+                <input type="text" id="first-name" placeholder="type here..." class="field-input" required/>
               </div>
               <div class="field1">
                 <label for="last-name" class="field-name">Last Name</label>
-                <input type="text" id="last-name" placeholder="type here..." class="field-input"/>
+                <input type="text" id="last-name" placeholder="type here..." class="field-input" required/>
               </div>
             
               <div class="field1">
@@ -39,7 +39,8 @@
                           </div>
               <div class="field1">
                 <label for="password" class="field-name">Password</label>
-                <input type="password" id="password" placeholder="******" class="field-input" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required/>
+                <input type="password" id="password" placeholder="******" class="field-input" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
               </div>
           
               <div class="field1">
@@ -48,7 +49,7 @@
               </div>
               <div class="field1" class="field-name">
                 <label for="country" class="field-name">Country</label>
-                <select id="country" placeholder="Select City first" class="field-input" disabled="disabled">
+                <select id="country" class="field-input" disabled="disabled">
                   <option value="default">Select city first</option>
                   <option value="country1">Country1</option>
                   <option value="country2">Country2</option>
