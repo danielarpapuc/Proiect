@@ -1,0 +1,7 @@
+@mixin displayFlex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: center;
+    align-items: center;
+    // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }

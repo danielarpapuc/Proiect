@@ -1,0 +1,64 @@
+$headerDark: #243444;
+$headerLight: #acbbcb;
+$displayDefault: inline-block;
+@import "mixins";
+#first-header {
+        @include displayFlex(row);
+    background-color: $headerDark;
+    justify-content: space-around;
+    #website-logo {
+display: $displayDefault;
+    }
+   ul {
+    list-style-type: none;
+    display: $displayDefault;
+    // padding: 0 200px;
+    li {
+    text-decoration: none;
+    &:not(:last-child){
+       padding-right: 30px;  
+    }
+    display: $displayDefault;
+    i {
+      color: $headerLight;  
+    }
+    a {
+    text-decoration: none;
+    color: $headerLight;
+      }
+    }
+} 
+}   
+#second-header {
+  ul{
+    list-style-type: none;
+    display: $displayDefault;
+    li{
+      text-decoration: none;  
+  .dropdown-menu {
+  display: $displayDefault;
+  position: relative;
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  .hide-list {
+  display: none;
+   position: absolute; 
+   a {
+  // color: black;
+  // padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+}
+}
+}
+}
+}
+.show-list {display: block;}
+
+* {
+    border: 1px solid red;
+}
+

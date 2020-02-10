@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  * {
+    border: 1px solid red;
+  }
+  #sign-up-container {
+    height: 500px;
+    width: 1000px;
+    background-color: #ececec;
+    /* justify-content: flex-start; */
+  }
+  .hero1 {
+    width: 40%;
+    height: 100%;
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/32472ED8-8A08-49F5-9A2AB70DA387E5B7_source.jpg?w=590&h=800&BC7D68E0-B303-4BF3-95BFF7B0071DC23D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  /* .overlay:hover {
+    background-color: rgb(255, 0, 0, 0.1);
+  } */
+  
+  .flex {
+    display: flex;
+    box-sizing: border-box;
+     justify-content: center;
+    align-items: center;
+  }
+  .flex-column {
+    flex-direction: column;
+    
+     }
+.flex-row {
+  flex-direction: row;
+}
+  .hero1 > h2 {
+    color: white;
+  }
+  
+  .field1 {
+    border: 1px solid green;
+    /* display: inline-block; */
+    margin: 15px;
+    box-sizing: border-box;
+  }
+  input,
+  select {
+    display: block;
+    width: 230px;
+    border-radius: 1px;
+    border-color: #acbbcb;
+    border-style: solid;
+    box-sizing: border-box;
+  }
+  select {
+    background-color: #A4B4C5;
+  }
+  input:hover,
+  select:hover {
+    border-color:  #66B76F;
+  }
+
+  #sign-up-form {
+    border: 2px solid cyan;
+    width: 60%;
+  }
+  #sign-up-form > * {
+    margin-bottom: 20px;
+  }
+  .field-row {
+    border: 1px solid blue;
+    width: 100%;
+  }
+  .hero-button {
+    padding: 7px 30px;
+    border: 1px solid #aabaca;
+    color: #aabaca;
+    background-color: transparent;
+    font-size: 50%;
+    font-weight: bold;
+  }
+  .hero-button:hover {
+    /* background-color: rgb(56, 44, 44); */
+    color: #c7b178;
+    border: 2px solid;
+    /* opacity: 0.8; */
+  }
+  .field-input {
+      padding: 10px;
+border-style: inherit;  
+}
+  .field-name {
+      font-size: 12px;
+      font-weight: bold;
+      color: #243444;
+  }
+  .green-button {
+      background-color:  #66B76F;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      width: 230px;
+      font-size: 12px;
+  }
+ 
+ 
+form {
+  width: 100%;
+  border: 1px solid red;
+}
+#all-fields {
+  border: 1px solid purple;
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+#logo {
+  width: 5%;
+  height: 5%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+a {
+  color:  #66B76F;
+  font-size: 12px;
+}
