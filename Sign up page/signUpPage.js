@@ -2,33 +2,45 @@ document.getElementById("sign-up").addEventListener("click", createUserAccount);
 
 function createUserAccount(e) {
     const userDatabase = [];
-    const firstName = document.getElementById("first-name").value;
-    const lastName = document.getElementById("last-name").value;
-    const emailAddress = document.getElementById("email-address").value;
-    const password = document.getElementById("password").value;
-    const city = document.getElementById("city").value;
-    const country = document.getElementById("country").value;
+    const firstNameValue = document.getElementById("first-name").value;
+    const lastNameValue = document.getElementById("last-name").value;
+    const emailAddressValue = document.getElementById("email-address").value;
+    const passwordValue = document.getElementById("password").value;
+    const cityValue = document.getElementById("city").value;
+    const countryValue = document.getElementById("country").value;
     e.preventDefault()
     const userAccount = {
-        firstName,
-        lastName,
-        emailAddress,
-        password,
-        city,
-        country
+        firstName: firstNameValue,
+        lastName: lastNameValue,
+        emailAddress: emailAddressValue,
+        password: passwordValue,
+        city: cityValue,
+        country: countryValue
     }
-
-    console.log(emailAddress.pattern)
 
     console.log(userAccount);
     userDatabase.push(userAccount);
     console.log(userDatabase)
-    console.log(userAccount.firstName.length)
+    console.log(userAccount.firstNameValue.length)
 }
 
-document.getElementById("city").addEventListener("change", unlockCountryField);
+city.addEventListener("change", unlockCountryField);
 function unlockCountryField() {
-    document.getElementById("country").firstElementChild.textContent = "test"
-    document.getElementById("country").removeAttribute("disabled");
-    document.getElementById("country").style.backgroundColor = "white";
+    countryValue.firstElementChild.textContent = "Select country";
+    countryValue.removeAttribute("disabled");
+   countryValue.style.backgroundColor = "white";
 }
+const eyeIcon = document.getElementById("eye-icon")
+eyeIcon.addEventListener("click", showPassword);
+ function showPassword () {
+    console.log(passwordValue)
+    //  if(passwordValue.type = "password") {
+    //      console.log(passwordValue)
+    //  } 
+     passwordValue.removeAttribute ("type");
+         passwordValue.setAttribute("type", "text")
+     console.log(passwordValue)
+    //  else {
+    //      console.log("WOOOOW")
+    //  }
+ }
