@@ -26,40 +26,36 @@
         <div id="all-fields" class="flex flex-row wrap">
           <div class="field1">
             <label for="first-name" class="field-name">First Name</label>
-            <input type="text" id="first-name" placeholder="type here..." class="field-input" required />
+            <input type="text" id="first-name" placeholder="type here..." class="field-input" value = "" required />
           </div>
           <div class="field1">
             <label for="last-name" class="field-name">Last Name</label>
-            <input type="text" id="last-name" placeholder="type here..." class="field-input" required />
+            <input type="text" id="last-name" placeholder="type here..." class="field-input" value = "" required />
           </div>
 
           <div class="field1">
             <label for="email-address" class="field-name">Email Address</label>
             <input type="email"
               pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
-              class="field-input" id="email-address" placeholder="john.doe@gmail.com" />
-            <!-- <p class="email-validation">Email address validated></p> -->
+              class="field-input" id="email-address" placeholder="john.doe@gmail.com" value = "" required/>
           </div>
           <div class="field1">
             <label for="password" class="field-name">Password</label>
-            <!-- <span class=""></span> -->
             <div class="field-input" id="password-wrapper">
-              <input type="password" id="password" name="password" placeholder="********" minlength="8"
-                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
+              <input type="password" id="password" name="password" placeholder="********" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" value = "" required >
               <button id="eye-icon">
                 <i class="fas fa-eye-slash" id="eyeIcon"></i>
               </button>
             </div>
 
           </div>
-
           <div class="field1">
             <label for="city" class="field-name">City</label>
-            <input type="text" id="city" placeholder="type here..." class="field-input" />
+            <input type="text" id="city" placeholder="type here..." class="field-input" value="" required/>
           </div>
           <div class="field1" class="field-name">
             <label for="country" class="field-name">Country</label>
-            <select id="country" class="field-input" disabled="disabled">
+            <select id="country" class="field-input" disabled="disabled" required>
               <option value="default">Select city first</option>
               <option value="country1">Country1</option>
               <option value="country2">Country2</option>
@@ -72,7 +68,7 @@
         <button type="submit" class="green-button" id="sign-up">SIGN UP</button>
       </form>
       <nav>
-        <a href="../Sign in page/logInPage.html">Already have an account? Sign in!</a>
+        <a href="./logInPage.html">Already have an account? Sign in!</a>
       </nav>
     </div>
   </div>
