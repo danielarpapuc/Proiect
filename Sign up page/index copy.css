@@ -35,16 +35,9 @@ body {
      }
 .flex-row {
   flex-direction: row;
-}
-  /* .hero1 > h2 {
-    color: white;
-  } */
-  
+} 
   .field1 {
-    /* border: 1px solid green; */
-    /* display: inline-block; */
     margin: 15px;
-    /* box-sizing: border-box; */
       }
   
   .field-input {
@@ -52,14 +45,11 @@ body {
     width: 230px;
     border-radius: 2px;
     border: 1px solid #A4B4C5;
-    /* border-color: red; */
     box-sizing: border-box;
     padding: 10px;
     background-color: white;
-/* border-style: inherit;  */
   }
 #password-wrapper {
-  /* border: 1px solid red; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -83,14 +73,12 @@ body {
     border-color:  #66B76F;
   } */
     #sign-up-form {
-    /* border: 2px solid cyan; */
     width: 60%;
   }
   #sign-up-form > * {
     margin-bottom: 20px;
   }
   .field-row {
-    /* border: 1px solid blue; */
     width: 100%;
   }
   .hero-button {
@@ -102,10 +90,8 @@ body {
     font-weight: bold;
   }
   .hero-button:hover {
-    /* background-color: rgb(56, 44, 44); */
     color: #c7b178;
     border: 2px solid;
-    /* opacity: 0.8; */
   }
     .field-name {
       font-size: 12px;
@@ -122,10 +108,8 @@ body {
   } 
 form {
   width: 100%;
-  /* border: 1px solid red; */
 }
 #all-fields {
-  /* border: 1px solid purple; */
   width: 100%;
 }
 

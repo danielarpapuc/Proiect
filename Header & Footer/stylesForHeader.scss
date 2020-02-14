@@ -1,13 +1,16 @@
 $headerDark: #243444;
 $headerLight: #acbbcb;
 $displayDefault: inline-block;
+$fontPrimary: Arial;
 @import "mixins";
 #first-header {
         @include displayFlex(row);
     background-color: $headerDark;
     justify-content: space-around;
-    #website-logo {
-display: $displayDefault;
+    #website-logo  {
+      @include displayFlex(row);
+      // box-sizing: content-box;
+      font-weight: bold;
     }
    ul {
     list-style-type: none;
@@ -21,10 +24,12 @@ display: $displayDefault;
     display: $displayDefault;
     i {
       color: $headerLight;  
+      
     }
     a {
     text-decoration: none;
     color: $headerLight;
+    font-size: 75%;
       }
     }
 } 
@@ -59,6 +64,16 @@ display: $displayDefault;
 .show-list {display: block;}
 
 * {
+  font-family: $fontPrimary;
     border: 1px solid red;
 }
 
+#logo {
+  width: 20%;
+  height: 20%;
+  // display: inline;
+  transition: transform 0.5s;
+  &:hover {
+    transform: rotate(-90deg);
+  }
+}
