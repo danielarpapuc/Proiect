@@ -1,4 +1,7 @@
-
+document.getElementById("logo").addEventListener("click", redirectToHomepage)
+function redirectToHomepage () {
+    window.location.href = "../Landing page/landingPage.html";
+}
 const eyeIconButton = document.getElementById("eye-icon")
 eyeIconButton.addEventListener("click", showPassword);
  function showPassword () {
