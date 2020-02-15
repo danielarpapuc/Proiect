@@ -2,13 +2,17 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
     <link rel="stylesheet" href="stylesForHeader.css">
     <link rel="stylesheet" href="stylesForContent.css">
     <script src="https://kit.fontawesome.com/7fefe15b41.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <header">
+    <header>
         <div id="first-header" class="flex">
             <div id="website-logo" class="flex">
                 <img id="logo" src="https://static.thenounproject.com/png/795891-200.png" />
@@ -27,31 +31,33 @@
             </ul>
         </div>
         <div id="second-header">
-            <div class="dropdown-menu" id=" menu-1">
+            <div class="dropdown-menu" id="menu-1">
                 <button id="button-1" class="dropdown-button">FIREARMS</button>
                 <nav id="dropdown-1" class="dropdown-content hide-list">
                     <a href="footer.html">Handguns</a>
                     <a href="#o2">Rifles (proof of concept)</a>
                     <a href="#o3">Shotguns (proof of concept)</a>
+                    <a href="#">Revolvers (proof of concept)</a>
+                    <a href="#">Proof of concept</a>
 
                 </nav>
             </div>
             <div class="dropdown-menu menu-2">
                 <button id="button-2" class="dropdown-button">AMMUNITION</button>
                 <nav id="dropdown-2" class="dropdown-content hide-list">
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
+                    <a href="#">Shotgun ammo</a>
+                    <a href="#">Riffle ammo</a>
+
 
                 </nav>
             </div>
             <div class="dropdown-menu menu-3">
                 <button id="button-3" class="dropdown-button">ACCESSORIES</button>
                 <nav id="dropdown-3" class="dropdown-content hide-list">
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
+                    <a href="#">Belts & holsters (proof of concept)</a>
+                    <a href="#"> Eye & ear protection (proof of concept)</a>
+                    <a href="#"> Optics & scopes (proof of concept)</a>
+
                 </nav>
             </div>
 
@@ -67,47 +73,39 @@
 
 
         </div>
-        </header>
+    </header>
 
+    <div id="landing-content">
+        <div id="moving-hero">
+            <div class="overlay flex">
+                <div class="hero-content flex">
+                    <h3>Your ultimate marketplace for target shooting and hunting gear</h3>
+                    <p>Start your search now</p>
+                    <div id="search-section" class="flex">
+                        <input type="text" id="hero-search">
+                        <button class="hero-button">SEARCH</button>
+                    </div>
 
-<div id="landing-content">
-    <div id="moving-hero"></div>
-    <div id="carousel1" class="carousel"></div>
-    <div id="small-hero"></div>
-    <div id="carousel2" class="carousel"></div>
-</div>
+                </div>
+            </div>
+        </div>
+        <div id="carousel1" class="flex">
+            <div class="carousel-arrows flex">
+                <button id="arrow-left" ><i class="fas fa-arrow-circle-left"></i></button>
+            </div>
+            <div id="product-cards" class="product-cards"></div>
+            <div class="carousel-arrows flex">
+                <button id="arrow-right"><i class="fas fa-angle-right"></i></button>
+            </div>
 
+        </div>
+        <div id="small-hero"></div>
+        <div id="carousel2" class="carousel"></div>
+    </div>
 
-<footer>
-    <div class="first-footer flex flex-row">
-    <p>Start your 30-day free trial today</p>
-    <button class="green-button">BUTTON LABEL</button>
-    </div>
-    <div class="second-footer flex flex-row">
-    <div>
-    <p>2019 The Website,  Inc.</p>
-    </div>
-    <div class="flex flex-column">ABOUT
-    <a href="#index.html">Team</a>
-    <a href="#index.html">Jobs</a>
-    <a href="#index.html">Blog</a>
-    <a href="#index.html">Press</a>
-    </div>
-    <div class="flex flex-column">HELP
-            <a href="#index.html">FAQ</a>
-            <a href="#index.html">Security</a>
-            <a href="#index.html">Terms of service</a>
-            <a href="#index.html">Privacy policy</a>
-    </div>
-    <div class="flex flex-column">Connect
-            <a href="#index.html">Facebook</a>
-            <a href="#index.html">Youtube</a>
-            <a href="#index.html">Twitter</a>
-            <a href="#index.html">Instagram</a>
-    </div></div></footer>        
-        <script src="header.js">
-        </script>
-        
+    <script src="header.js">
+    </script>
+
 </body>
 
 </html>

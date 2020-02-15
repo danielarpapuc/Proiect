@@ -1,0 +1,19 @@
+for cards:
+
+title: brand + name + model number + type
+(ex: Ruger + Super Blackhawk + 2556 + Revolver)
+price
+button to redirect to product page
+
+
+name
+serial number
+model number
+color
+brand
+action: semi-automatic
+weight
+type
+price
+pictures
+link to product page

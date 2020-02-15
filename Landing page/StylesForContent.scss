@@ -1,21 +1,79 @@
-
-
+@import "mixins";
+@import "colors";
+#carousel1 > * {
+    border: 1px solid red;
+}
 #landing-content {
     width: 100%;
     height: 100vh;
     background: url("https://media.giphy.com/media/ModQaJgxAlcMU/giphy.gif") no-repeat center center fixed;
     background-attachment: fixed;
-    background-color: rgb(7, 7, 14);
     background-size: cover;
 #moving-hero {
-    // width: 100%;
     height: 60vh;
-    // border: 2px solid red;
-    background-color: transparent;
+    .overlay {       
+        height: 100%;
+        @include displayFlex(column);
+        // width: 100%;
+        // background-color: rgb(0, 0, 139);
+        background-color: #00000080;
+        
+        .hero-content { 
+            @include displayFlex(column);
+            color: white;
+            // h4 {}
+            // p {}
+            #search-section {
+                width: 100%;
+                @include displayFlex(row);   
+justify-content: space-between;                input {
+                    width: 80%;
+                padding: 5px;
+                border: none;
+                  }
+            button {
+                @include greenButton;
+
+            }
+            }
+            
+        }
+    }
 }
 #carousel1 {
     height: 50vh;
     background-color: white;
+display: grid;
+grid-template-areas: 
+"carousel-arrows product-cards carousel-areas";
+grid-template-columns: 150px auto 150px;
+    .carousel-arrows {
+        // height: 95%;
+        @include displayFlex(column);
+        button {
+height: 95%;
+width: 100%;
+border-color: transparent;
+background-color: transparent;   
+i {
+    font-size: 300%;
+}
+&:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+        }
+#arrow-left {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;}
+#arrow-right {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+    }
+    #product-cards {
+        height: 100%;
+    }
 }
 #small-hero {
     height: 30vh;

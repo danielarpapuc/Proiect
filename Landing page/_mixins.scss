@@ -3,5 +3,20 @@
     flex-direction: $flexDirection;
     justify-content: center;
     align-items: center;
+    align-content: center;
     // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+@mixin greenButton {
+          background-color:  #66B76F;
+          padding: 5px 20px;
+          color: white;
+          font-weight: bold;
+          // width: 230px;
+          font-size: 12px;
+          border: none;
+          &:hover {
+            background-color:#2d9c3a;
+
+          }
       }

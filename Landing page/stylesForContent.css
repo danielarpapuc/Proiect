@@ -1,20 +1,154 @@
+#carousel1 > * {
+  border: 1px solid red;
+}
+
 #landing-content {
   width: 100%;
   height: 100vh;
   background: url("https://media.giphy.com/media/ModQaJgxAlcMU/giphy.gif") no-repeat center center fixed;
   background-attachment: fixed;
-  background-color: #07070e;
   background-size: cover;
 }
 
 #landing-content #moving-hero {
   height: 60vh;
-  background-color: transparent;
+}
+
+#landing-content #moving-hero .overlay {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #00000080;
+}
+
+#landing-content #moving-hero .overlay .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: white;
+}
+
+#landing-content #moving-hero .overlay .hero-content #search-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#landing-content #moving-hero .overlay .hero-content #search-section input {
+  width: 80%;
+  padding: 5px;
+  border: none;
+}
+
+#landing-content #moving-hero .overlay .hero-content #search-section button {
+  background-color: #66B76F;
+  padding: 5px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+}
+
+#landing-content #moving-hero .overlay .hero-content #search-section button:hover {
+  background-color: #2d9c3a;
 }
 
 #landing-content #carousel1 {
   height: 50vh;
   background-color: white;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "carousel-arrows product-cards carousel-areas";
+  -ms-grid-columns: 150px auto 150px;
+      grid-template-columns: 150px auto 150px;
+}
+
+#landing-content #carousel1 .carousel-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#landing-content #carousel1 .carousel-arrows button {
+  height: 95%;
+  width: 100%;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#landing-content #carousel1 .carousel-arrows button i {
+  font-size: 300%;
+}
+
+#landing-content #carousel1 .carousel-arrows button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#landing-content #carousel1 .carousel-arrows #arrow-left {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#landing-content #carousel1 .carousel-arrows #arrow-right {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#landing-content #carousel1 #product-cards {
+  height: 100%;
 }
 
 #landing-content #small-hero {

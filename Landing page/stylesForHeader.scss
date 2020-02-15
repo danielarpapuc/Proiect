@@ -36,7 +36,6 @@ $fontPrimary: Arial;
     }
 } 
 }   
-
   #second-header {
     @include displayFlex(row);
     justify-content: space-evenly;
@@ -50,7 +49,11 @@ $fontPrimary: Arial;
     box-sizing: border-box;  
     .dropdown-menu {
       text-decoration: none;  
-      
+      &:hover {
+.dropdown-content {
+  display: block;
+}
+      }
 // box-sizing: border-box;  
 position: relative;
   .dropdown-button {
@@ -64,11 +67,11 @@ position: relative;
       border: 3px solid $headerDark;
     }
   }
-  .hide-list {
-    display: none;
-  }
+  // .hide-list {
+  //   display: none;
+  // }
   .dropdown-content {
-// display: none;   
+display: none;   
 position: absolute; 
    a {
   color: $headerLight;
