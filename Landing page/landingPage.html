@@ -7,11 +7,13 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="stylesForHeader.css">
     <link rel="stylesheet" href="stylesForContent.css">
+    <link rel="stylesheet" href="stylesForFooter.css">
     <script src="https://kit.fontawesome.com/7fefe15b41.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
+    <div id="page-container">
     <header>
         <div id="first-header" class="flex">
             <div id="website-logo" class="flex">
@@ -38,7 +40,7 @@
                     <a href="#o2">Rifles (proof of concept)</a>
                     <a href="#o3">Shotguns (proof of concept)</a>
                     <a href="#">Revolvers (proof of concept)</a>
-                    <a href="#">Proof of concept</a>
+      
 
                 </nav>
             </div>
@@ -54,9 +56,9 @@
             <div class="dropdown-menu menu-3">
                 <button id="button-3" class="dropdown-button">ACCESSORIES</button>
                 <nav id="dropdown-3" class="dropdown-content hide-list">
-                    <a href="#">Belts & holsters (proof of concept)</a>
-                    <a href="#"> Eye & ear protection (proof of concept)</a>
-                    <a href="#"> Optics & scopes (proof of concept)</a>
+                    <a href="#">Belts & holsters</a>
+                    <a href="#"> Eye & ear protection</a>
+                    <a href="#"> Optics & scopes</a>
 
                 </nav>
             </div>
@@ -64,9 +66,9 @@
             <div class="dropdown-menu">
                 <button id="button-4" class="dropdown-button">SALE</button>
                 <nav id="dropdown-4" class="dropdown-content hide-list">
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
-                    <a href="#">Proof of concept</a>
+                    <a href="#">Firearms</a>
+                    <a href="#">Ammunition</a>
+                    <a href="#">Accessories</a>
 
                 </nav>
             </div>
@@ -83,15 +85,15 @@
                     <p>Start your search now</p>
                     <div id="search-section" class="flex">
                         <input type="text" id="hero-search">
-                        <button class="hero-button">SEARCH</button>
+                        <button type="button" id="tessst" class="hero-button">SEARCH</button>
                     </div>
 
                 </div>
             </div>
         </div>
-        <div id="carousel1" class="flex">
+        <div id="carousel" class="flex">
             <div class="carousel-arrows flex">
-                <button id="arrow-left" ><i class="fas fa-angle-left"></i></button>
+                <button id="arrow-left"><i class="fas fa-angle-left"></i></button>
             </div>
             <div id="product-cards" class="product-cards"></div>
             <div class="carousel-arrows flex">
@@ -100,11 +102,48 @@
 
         </div>
         <div id="small-hero"></div>
-        <div id="carousel2" class="carousel"></div>
-    </div>
-<!-- <div id="testing"></div> -->
-    <script src="header.js">
-    </script>
+        <div id="semi-display">
+            <div id="semi-display-content">
+                <p>NEW ARRIVALS</p>
+                
+            </div>
+        </div>
+     <footer id="footer">
+        <div id="first-footer" class="flex">
+            <p>Start your 30-day free trial today</p>
+            <button class="green-button">GET OFFER</button>
+        </div>
+        <div id="second-footer" class="flex">          
+                <p>2019 The Website, Inc.</p>         
+            <div class="footer-block">
+               <p>ABOUT</p> 
+                <a href="#index.html">Team</a>
+                <a href="#index.html">Jobs</a>
+                <a href="#index.html">Blog</a>
+                <a href="#index.html">Press</a>
+            </div>
+            <div class="footer-block">
+               <p>HELP</p> 
+                <a href="#index.html">FAQ</a>
+                <a href="#index.html">Security</a>
+                <a href="#index.html">Terms of service</a>
+                <a href="#index.html">Privacy policy</a>
+            </div>
+            <div class="footer-block">
+               <p>CONNECT</p> 
+                <a href="#index.html">Facebook</a>
+                <a href="#index.html">Youtube</a>
+                <a href="#index.html">Twitter</a>
+                <a href="#index.html">Instagram</a>
+            </div>
+        </div>
+    </footer></div>
+   
+   
+</div>
+    <!-- <div id="testing"></div> -->
+    <script src="header.js"></script>
+    <!-- <script src="./userCards.js"></script> -->
 
 </body>
 

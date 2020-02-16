@@ -1,26 +1,15 @@
-1111111111111111111111111111111111111111111111111111
-https://www.cheaperthandirt.com/quick-view?pid=FC-706397926069
-
 {
-  "queryString": "pid=FC-706397926069",
-  "product": {
+  "product_706397926069": {
     "id": "GUN-916558",
     "productName": "Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5\" Barrel 30 Rounds with a SB Tactical Pistol Brace Black",
     "productType": "variant",
-    "brand": "Springfield",
-    "manufacturerName": "STV975556B",
-    "UPC": "706397926069",
-    "isFirearm": true,
-
+    "brand": "Springfield",      
     "price": {
-      "sales": {
         "value": 859,
         "currency": "USD",
         "formatted": "$859.00",
         "decimalPrice": "859.00"
-      },
-   
-}
+      }, 
     "images": {
       "large": [
         {
@@ -57,32 +46,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-706397926069
         }
       ]
     }
+},
 
-22222222222222222222222222222222222222222222222222222222222222
-https://www.cheaperthandirt.com/quick-view?pid=FC-736676085705
-{
-
-  "queryString": "pid=FC-736676085705",
-  
-"product": {
+"product_736676085705": {
     "id": "GUN-8570",
     "productName": "Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5\" Barrel 30 Rounds M-LOK Handguard Black",
-    "productType": "variant",
-    "brand": "Ruger",
-    "manufacturerName": "8570",
-    "UPC": "736676085705",
-    "isFirearm": true,
-   
-     
-    "price": {
-      "sales": {
+"productType": "variant",       
+ "brand": "Ruger",  
+    "price": {     
         "value": 659,
         "currency": "USD",
         "formatted": "$659.00",
         "decimalPrice": "659.00"
       },
-  
-    },
     "images": {
       "large": [
         {
@@ -139,36 +115,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-736676085705
         }
       ]
     }
+},
 
-
-
-
-
-33333333333333333333333333333333333333333333333333333333333333
-https://www.cheaperthandirt.com/quick-view?pid=FC-741566603358
-{
-
-  "queryString": "pid=FC-741566603358",
-
- "product": {
+ "product_741566603358": {
     "id": "2-EA610066",
-    "productName": "EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25\" Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating",
-    "productType": "variant",
-    "brand": "EAA",
-    "manufacturerName": "610066",
-    "UPC": "741566603358",
-    "isFirearm": true,
-   
-    }
+"productName": "EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25\" Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating",
+"productType": "variant",    
+"brand": "EAA",
     "price": {
-      "sales": {
         "value": 5088.2,
         "currency": "USD",
         "formatted": "$5,088.20",
         "decimalPrice": "5088.20"
-      },
- 
-    },
+      }, 
     "images": {
       "large": [
         {
@@ -185,31 +144,20 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-741566603358
         }
       ]
     }
+   },
 
-
-
-444444444444444444444444444444444444444444444444444444444444444444
-{
-  
-  "queryString": "pid=FC-800732701066",
- "product": {
+ "product_800732701066": {
     "id": "103911",
     "productName": "Ed Brown Special Forces SRC Semi Auto Pistol .45 ACP 4.25\" Threaded Barrel 7 Rounds Trijicon RMR Matte Black Finish",
-    "productType": "variant",
-    "brand": "Ed Brown Products Inc",
-    "manufacturerName": "SRC18LW",
-    "UPC": "800732701066",
-    "isFirearm": true,
-   
-    "price": {
-      "sales": {
+   "productType": "variant",
+    "brand": "Ed Brown Products Inc",       
+    "price": {      
         "value": 4369.24,
         "currency": "USD",
         "formatted": "$4,369.24",
         "decimalPrice": "4369.24"
       },
 
-    },
     "images": {
       "large": [
         {
@@ -226,33 +174,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-741566603358
         }
       ]
     }
+    },
 
-
-555555555555555555555555555555555555555555555555555555555555
-https://www.cheaperthandirt.com/quick-view?pid=FC-800732701073
-{
-
-  "queryString": "pid=FC-800732701073",
-
- "product": {
-  
+   "product_800732701073": {  
     "id": "103906",
     "productName": "Ed Brown CCO LW 9mm Luger Semi Auto Pistol 4.25\" Barrel 8 Rounds Officer Frame Commander Slide FO Front Sight Synthetic Grips Matte Black Finish",
     "productType": "variant",
-    "brand": "Ed Brown Products Inc",
-    "manufacturerName": "CCO18LW9",
-    "UPC": "800732701073",
-    "isFirearm": true,
-    
-    "price": {
-      "sales": {
+    "brand": "Ed Brown Products Inc",      
+       "price": {    
         "value": 3391.16,
         "currency": "USD",
         "formatted": "$3,391.16",
         "decimalPrice": "3391.16"
       },
-
-    },
     "images": {
       "large": [
         {
@@ -269,30 +203,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-800732701073
         }
       ]
     }
+},
 
-666666666666666666666666666666666666666666666666666666666666
-https://www.cheaperthandirt.com/quick-view?pid=FC-811826028884
-{
-
-  "queryString": "pid=FC-811826028884",
-"product": {
+"product_811826028884": {
     "id": "111853",
     "productName": "Wilson Combat Tactical Carry Commander 1911 Semi Automatic Handgun 9mm Luger 4\" Barrel 10 Rounds Starburst G10 Grips Armor Tuff Black Finish",
     "productType": "variant",
     "brand": "Wilson Combat",
-    "manufacturerName": "TCCOM9",
-    "UPC": "811826028884",
-    "isFirearm": true,
-   
-    "price": {
-      "sales": {
+    "price": {     
         "value": 3067.31,
         "currency": "USD",
         "formatted": "$3,067.31",
         "decimalPrice": "3067.31"
-      },
-    
-    },
+      },   
     "images": {
       "large": [
         {
@@ -319,38 +242,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-811826028884
         }
       ]
     }
+  },
 
-
-
-
-
-
-
-
-77777777777777777777777777777777777777777777777777777777777
-https://www.cheaperthandirt.com/quick-view?pid=FC-806703911748
-{
-
-  "queryString": "pid=FC-806703911748",
-  "product": {
-    "uuid": "9ca3d1564dd4c0329212d9283e",
+  "product_806703911748": {   
     "id": "FC-806703911748",
     "productName": "CZ-USA CZ75 TS Czechmate 9mm Luger Semi-Auto Competition Handgun 5.27\" Barrel 26 Rounds C-More Red Dot Sight Steel Frame Black Finish",
     "productType": "master",
-    "brand": "CZ-USA",
-    "manufacturerName": "91174",
-    "UPC": "806703911748",
-    "isFirearm": true,
-   
-    "price": {
-      "sales": {
+    "brand": "CZ-USA",      
+    "price": {      
         "value": 2981.74,
         "currency": "USD",
         "formatted": "$2,981.74",
         "decimalPrice": "2981.74"
-      },
-
-    },
+      },    
     "images": {
       "large": [
         {
@@ -377,34 +281,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-806703911748
         }
       ]
     }
+},
 
-
-
-
-8888888888888888888888888888888888888888888888888888888888888
-https://www.cheaperthandirt.com/quick-view?pid=FC-2-BANDT-36077
-{
-
-  "queryString": "pid=FC-2-BANDT-36077",
-  "product": {
-    "uuid": "217db7732d0c92b05875308709",
+  "product_847313016223": {   
     "id": "2-BANDT-36077",
     "productName": "B&T APC308 Semi Auto Pistol .308 Winchester 14.3\" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black",
     "productType": "variant",
     "brand": "B&T AG",
-    "manufacturerName": "BT-36077",
-    "UPC": "2-BANDT-36077",
-    "isFirearm": true,
-    
-    "price": {
-      "sales": {
+    "price": {    
         "value": 2910.39,
         "currency": "USD",
         "formatted": "$2,910.39",
         "decimalPrice": "2910.39"
-      },
-  
-    },
+      },   
     "images": {
       "large": [
         {
@@ -420,35 +309,20 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-2-BANDT-36077
           "title": "B&T APC308 Semi Auto Pistol .308 Winchester 14.3\" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black"
         }
       ]
-    },
+    }
+ },
 
-
-
-
-
-99999999999999999999999999999999999999999999999999999999999
-https://www.cheaperthandirt.com/quick-view?pid=FC-811826028761
-{
- 
-  "queryString": "pid=FC-811826028761",
- "product": {
-    "uuid": "ff384a3c33f9a55f53f41a6a6c",
+ "product_811826028761": {    
     "id": "111851",
     "productName": "Wilson Combat CQB Elite Full Size 1911 Semi Automatic Handgun .45 ACP 5\" Barrel 8 Rounds Diagonal G10 Grips Natural Stainless Steel Finish",
     "productType": "variant",
     "brand": "Wilson Combat",
-    "manufacturerName": "CQBEFS45SS",
-    "UPC": "811826028761",
-    
-    "price": {
-      "sales": {
+    "price": {     
         "value": 2809.36,
         "currency": "USD",
         "formatted": "$2,809.36",
         "decimalPrice": "2809.36"
-      },
-
-    },
+      },  
     "images": {
       "large": [
         {
@@ -476,29 +350,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-811826028761
       ]
     }
 
-10101010101010101010101010101010101010101010110101010101
-https://www.cheaperthandirt.com/quick-view?pid=FC-847313016003
-{
+  },
  
-  "queryString": "pid=FC-847313016003",
- "product": {
-    "uuid": "9cf0a614cd7e81875b124deb40",
+ "product_847313016003": {   
     "id": "2-POF01600",
     "productName": "POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5\" Barrel 20 Rounds Direct Gas Impingement System 11.5\" M-LOK Free Float Rail Burnt Bronze Finish",
     "productType": "variant",
-    "brand": "Patriot Ordnance Factory",
-    "manufacturerName": "01600",
-    "UPC": "847313016003",
-   
-    "price": {
-      "sales": {
+    "brand": "Patriot Ordnance Factory",     
+    "price": {      
         "value": 2530.54,
         "currency": "USD",
         "formatted": "$2,530.54",
         "decimalPrice": "2530.54"
-      },
-    
-    },
+      },       
     "images": {
       "large": [
         {
@@ -516,36 +380,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-847313016003
       ]
     }
 
+ },
 
-
-
-
-
-
-
-110110110110110110110110110110110110110110110110110110
-https://www.cheaperthandirt.com/quick-view?pid=FC-2-BANDT-430003
-{
-
-  "queryString": "pid=FC-2-BANDT-430003",
- "product": {
-    "uuid": "ccfe281bd7e323b8f18026f109",
+ "product_847313016443": {    
     "id": "2-BANDT-430003",
     "productName": "B&T USW A1 Semi Auto Pistol 9mm Luger 4.8\" Barrel 17 Rounds Aimpoint Nano B&T 200 Lumen APL Tactical Pistol Light Ambidextrous Controls Grip Panel Inserts Matte Black",
     "productType": "variant",
     "brand": "B&T AG",
-    "manufacturerName": "BT-430003",
-    "UPC": "2-BANDT-430003",
-
-    "price": {
-      "sales": {
+    "price": {      
         "value": 2207.41,
         "currency": "USD",
         "formatted": "$2,207.41",
         "decimalPrice": "2207.41"
-      },
-
-    },
+      },   
     "images": {
       "large": [
         {
@@ -571,33 +418,21 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-2-BANDT-430003
           "title": "B&T USW A1 Semi Auto Pistol 9mm Luger 4.8\" Barrel 17 Rounds Aimpoint Nano B&T 200 Lumen APL Tactical Pistol Light Ambidextrous Controls Grip Panel Inserts Matte Black"
         }
       ]
-    },
-    "
+    }
+     },
 
 
-120120120120120120120120120120120120120120120120120
-https://www.cheaperthandirt.com/quick-view?pid=FC-741566104534
-{
-
-  "queryString": "pid=FC-741566104534",
-
-"product": {
+"product_741566104534": {
     "id": "FC-741566104534",
     "productName": "EAA Witness Elite Gold Team Semi-auto Pistol 9mm 5.25\" Barrel 17 Rounds, Compensater, No Sights, Drilled and Tapped, Single Action, Chrome",
     "productType": "master",
-    "brand": "EAA",
-    "manufacturerName": "600066",
-    "UPC": "741566104534",
-   
-    "price": {
-      "sales": {
+    "brand": "EAA",   
+    "price": {     
         "value": 2155,
         "currency": "USD",
         "formatted": "$2,155.00",
         "decimalPrice": "2155.00"
-      },
-   
-    },
+      },  
     "images": {
       "large": [
         {
@@ -613,33 +448,20 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-741566104534
           "title": "EAA Witness Elite Gold Team Semi-auto Pistol 9mm 5.25\" Barrel 17 Rounds, Compensater, No Sights, Drilled and Tapped, Single Action, Chrome"
         }
       ]
-    },
-   
+    }   
+  },
 
-
-13013013013013013013013013013013013013
-https://www.cheaperthandirt.com/quick-view?pid=FC-854581007398
-{
- 
-  "queryString": "pid=FC-854581007398",
-"product": {
-  
+"product_854581007398": {  
     "id": "7-GSAR4N1",
     "productName": "Standard Manufacturing .45 Long Colt Single Action Revolver 4.75\" Barrel 6 Rounds Fixed Sights One Piece Grip Nickel Finish",
     "productType": "variant",
     "brand": "Standard Manufacturing",
-    "manufacturerName": "SAR4N1",
-    "UPC": "854581007398",
-    
-    "price": {
-      "sales": {
+    "price": {    
         "value": 2024.6,
         "currency": "USD",
         "formatted": "$2,024.60",
         "decimalPrice": "2024.60"
-      },
-    
-    },
+      },  
     "images": {
       "large": [
         {
@@ -656,30 +478,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-854581007398
         }
       ]
     }
+  },
 
-140140140140140140140140140140140140140140
-https://www.cheaperthandirt.com/quick-view?pid=FC-761226088394
-{
-  
-  "queryString": "pid=FC-761226088394",
-  "product": {
-    
+  "product_761226088394": {    
     "id": "FC-761226088394",
     "productName": "Magnum Research Desert Eagle Mark XIX Semi Auto Pistol .50 Action Express 6\" Barrel 7 Rounds Fixed Combat Sights Weaver Accessory Rail Color Case Hardened Finish",
     "productType": "master",
     "brand": "Magnum Research",
-    "manufacturerName": "DE50CH",
-    "UPC": "761226088394",
-    
-    "price": {
-      "sales": {
+    "price": {     
         "value": 1958.88,
         "currency": "USD",
         "formatted": "$1,958.88",
         "decimalPrice": "1958.88"
       },
-      
-    },
     "images": {
       "large": [
         {
@@ -697,30 +508,20 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-761226088394
       ]
     }
 
-
-150150150150150150150150150150150150150150150150
-https://www.cheaperthandirt.com/quick-view?pid=FC-815648028619
-{
-  
-  "queryString": "pid=FC-815648028619",
-"product": {
+  },  
+ 
+"product_815648028619": {
    
     "id": "2-SPKSTP5610-M1R",
     "productName": "Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5\" Barrel Milled Spartan Helmet Lower 12\" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish",
     "productType": "variant",
     "brand": "Spikes Tactical",
-    "manufacturerName": "STP5610-M1R",
-    "UPC": "815648028619",
-    
-    "price": {
-      "sales": {
+    "price": {      
         "value": 1957.5,
         "currency": "USD",
         "formatted": "$1,957.50",
         "decimalPrice": "1957.50"
-      },
-   
-    },
+      },  
     "images": {
       "large": [
         {
@@ -737,33 +538,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-815648028619
         }
       ]
     }
+  },
 
-
-
-
-160160160160160160160160160160160160160160
-https://www.cheaperthandirt.com/quick-view?pid=FC-7-GSAR7CC1
-{
-  
-  "queryString": "pid=FC-7-GSAR7CC1",
- "product": {
-  
+ "product_815648031619": {  
     "id": "7-GSAR7CC1",
     "productName": "Standard Manufacturing .45 Long Colt Single Action Revolver 7.5\" Barrel 6 Rounds Fixed Sights One Piece Grip Color Case Hardened Frame Blued Finish",
     "productType": "variant",
-    "brand": "Standard Manufacturing",
-    "manufacturerName": "SAR7CC1",
-    "UPC": "7-GSAR7CC1",
-    
-    "price": {
-      "sales": {
+    "brand": "Standard Manufacturing",    
+    "price": {     
         "value": 1934.5,
         "currency": "USD",
         "formatted": "$1,934.50",
         "decimalPrice": "1934.50"
-      },
-      
-    },
+      },        
     "images": {
       "large": [
         {
@@ -780,32 +567,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-7-GSAR7CC1
         }
       ]
     }
+  },
 
-
-
-170170170170170170170170170170
-https://www.cheaperthandirt.com/quick-view?pid=FC-680017478001
-{
-  
-  "queryString": "pid=FC-680017478001",
- "product": {
-   
+ "product_680017478001": {   
     "id": "FC-680017478001",
     "productName": "Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5\" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth",
     "productType": "master",
     "brand": "Maxim Defense",
-    "manufacturerName": "MXM-47800",
-    "UPC": "680017478001",
-    
-    "price": {
-      "sales": {
+    "price": {     
         "value": 1895.69,
         "currency": "USD",
         "formatted": "$1,895.69",
         "decimalPrice": "1895.69"
-      },
-      
-    },
+      }, 
     "images": {
       "large": [
         {
@@ -823,30 +597,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-680017478001
       ]
     }
 
+   },
 
-180180180180180180180180180180180
-https://www.cheaperthandirt.com/quick-view?pid=FC-728028235456
-{
-  
-  "queryString": "pid=FC-728028235456",
-  "product": {
-   
+  "product_728028235456": {   
     "id": "FC-728028235456",
     "productName": "Metro Arms SPS Vista Long Semi Auto Handgun .38 Super 5.5\" Barrel 21 Rounds 4140 Steel Frame Black Chrome Finish with Scope Mount Polymer Grips Black SPVL38SBC",
     "productType": "master",
     "brand": "Metro Arms Corp",
-    "manufacturerName": "SPVL38SBC",
-    "UPC": "728028235456",
-  
-    "price": {
-      "sales": {
+    "price": {      
         "value": 1990.99,
         "currency": "USD",
         "formatted": "$1,990.99",
         "decimalPrice": "1990.99"
-      },
-      
-    },
+      },       
     "images": {
       "large": [
         {
@@ -864,31 +627,19 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-728028235456
       ]
     }
 
+  },
 
-
-190190190190190190190190190
-https://www.cheaperthandirt.com/quick-view?pid=FC-806703018867
-{
- 
-  "queryString": "pid=FC-806703018867",
- "product": {
-   
+  "product_806703018867": {   
     "id": "FC-806703018867",
     "productName": "Dan Wesson 1911 Discretion Government Semi Auto Pistol 9mm Luger 5.75\" Threaded Barrel 10 Rounds Suppressor Height Night Sights G-10 Grips Stainless Steel Frame Black Duty Finish",
     "productType": "master",
     "brand": "Dan Wesson",
-    "manufacturerName": "01886",
-    "UPC": "806703018867",
-    
-    "price": {
-      "sales": {
+    "price": {      
         "value": 1843.67,
         "currency": "USD",
         "formatted": "$1,843.67",
         "decimalPrice": "1843.67"
-      },
-      
-    },
+      },   
     "images": {
       "large": [
         {
@@ -904,31 +655,20 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-806703018867
           "title": "Dan Wesson 1911 Discretion Government Semi Auto Pistol 9mm Luger 5.75\" Threaded Barrel 10 Rounds Suppressor Height Night Sights G-10 Grips Stainless Steel Frame Black Duty Finish"
         }
       ]
-    }
+    }   
+    },
 
-2020202020202202020202020
-https://www.cheaperthandirt.com/quick-view?pid=FC-811607032352
-{
-  
-  "queryString": "pid=FC-811607032352",
- "product": {
-   
+ "product_811607032352": {   
     "id": "FC-811607032352",
     "productName": "Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5\" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish",
     "productType": "master",
     "brand": "KRISS USA",
-    "manufacturerName": "KV10PSBAP31",
-    "UPC": "811607032352",
-  
-    "price": {
-      "sales": {
+    "price": {    
         "value": 1799,
         "currency": "USD",
         "formatted": "$1,799.00",
         "decimalPrice": "1799.00"
-      },
-     
-    },
+      },        
     "images": {
       "large": [
         {
@@ -945,41 +685,5 @@ https://www.cheaperthandirt.com/quick-view?pid=FC-811607032352
         }
       ]
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
+}

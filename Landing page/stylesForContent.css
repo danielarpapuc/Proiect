@@ -90,7 +90,7 @@
   background-color: #2d9c3a;
 }
 
-#landing-content #carousel1 {
+#landing-content #carousel {
   height: 50vh;
   background-color: white;
   display: -ms-grid;
@@ -100,7 +100,7 @@
       grid-template-columns: 150px auto 150px;
 }
 
-#landing-content #carousel1 .carousel-arrows {
+#landing-content #carousel .carousel-arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,43 +118,44 @@
       align-content: center;
 }
 
-#landing-content #carousel1 .carousel-arrows button {
+#landing-content #carousel .carousel-arrows button {
   height: 95%;
   width: 100%;
   border-color: transparent;
   background-color: transparent;
 }
 
-#landing-content #carousel1 .carousel-arrows button i {
+#landing-content #carousel .carousel-arrows button i {
   font-size: 300%;
   color: #243444;
 }
 
-#landing-content #carousel1 .carousel-arrows button:hover {
+#landing-content #carousel .carousel-arrows button:hover {
   background-color: #0000001a;
 }
 
-#landing-content #carousel1 .carousel-arrows #arrow-left {
+#landing-content #carousel .carousel-arrows #arrow-left {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-#landing-content #carousel1 .carousel-arrows #arrow-right {
+#landing-content #carousel .carousel-arrows #arrow-right {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
 
-#landing-content #carousel1 #product-cards {
+#landing-content #carousel #product-cards {
   height: 100%;
 }
 
 #landing-content #small-hero {
   height: 30vh;
-  background-color: black;
+  background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/01/19/30243/fbdecd3f7e10f20069f968ad1df48666-700.jpg") center;
+  display: none;
 }
 
-#landing-content #carousel2 {
-  height: 50vh;
-  background-color: white;
+#landing-content #semi-display {
+  height: 80vh;
+  background-color: #F4FBFB;
 }
 /*# sourceMappingURL=stylesForContent.css.map */

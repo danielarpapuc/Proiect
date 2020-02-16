@@ -40,7 +40,7 @@ justify-content: space-between;                input {
         }
     }
 }
-#carousel1 {
+#carousel {
     height: 50vh;
     background-color: white;
 display: grid;
@@ -78,11 +78,12 @@ i {
 }
 #small-hero {
     height: 30vh;
-    background-color: black;
+    background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/01/19/30243/fbdecd3f7e10f20069f968ad1df48666-700.jpg") center;
+display: none;
 }
-#carousel2 {
-    height: 50vh;
-    background-color: white;
+#semi-display {
+    height: 80vh;
+    background-color: $signUpLavender;
 }
 }
 

@@ -1,0 +1,48 @@
+@import "mixins";
+@import "colors";
+#footer {
+  
+    #first-footer{
+        @include displayFlex(row);
+        justify-content: space-evenly;
+        background-color: $headerDark;
+        color: $headerLight;
+// p {}
+button {
+    @include greenButton;
+}
+    }
+    #second-footer {
+        // * {
+        //     border: 1px solid red;
+        // }
+        padding-bottom: 10px;
+        box-sizing: content-box;
+        @include displayFlex(row);
+        justify-content: space-evenly;
+       p {
+           color: $headerDark;
+           font-size: 80%;
+       }
+       .footer-block {
+           @include displayFlex(column);
+           
+           p {
+             color: $headerLight;
+           font-weight: bold;
+           padding: 5px;  
+           }
+           a {
+               text-decoration: none;
+               color: $headerDark;
+               font-size: 80%;
+               padding: 5px;
+               font-weight: lighter;
+               &:hover {
+                   text-decoration: underline;
+               }
+           }
+       } 
+    }
+
+}
