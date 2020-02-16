@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Overview</title>
+<link rel="stylesheet" href="/Landing page/stylesForHeader.css">
+<link rel="stylesheet" href="/Landing page/stylesForFooter.css">
+<link rel="stylesheet" href="/Products overview/stylesForProductsOverview.css">
+<script src="https://kit.fontawesome.com/7fefe15b41.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="page-container">
+        <header>
+            <div id="first-header" class="flex">
+                <div id="website-logo" class="flex">
+                    <img id="logo" src="https://static.thenounproject.com/png/795891-200.png" />
+                    <p>Toys R +</p>
+                </div>
+                <ul id="first-header-list">
+                    <li class="first-header-list-items">
+    
+                        <a href="#index"><i class="fas fa-shopping-cart"></i> Your Cart</a></li>
+                    <li class="first-header-list-items">
+                        <a href="../Sign up page/signUpPage.html">
+                            <i class="fas fa-user-circle"></i> Register
+                        </a></li>
+                    <li class="first-header-list-items">
+                        <a href="../Sign up page/logInPage.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                </ul>
+            </div>
+            <div id="second-header">
+                <div class="dropdown-menu" id="menu-1">
+                    <button id="button-1" class="dropdown-button">FIREARMS</button>
+                    <nav id="dropdown-1" class="dropdown-content hide-list">
+                        <a href="footer.html">Handguns</a>
+                        <a href="#o2">Rifles (proof of concept)</a>
+                        <a href="#o3">Shotguns (proof of concept)</a>
+                        <a href="#">Revolvers (proof of concept)</a>
+          
+    
+                    </nav>
+                </div>
+                <div class="dropdown-menu menu-2">
+                    <button id="button-2" class="dropdown-button">AMMUNITION</button>
+                    <nav id="dropdown-2" class="dropdown-content hide-list">
+                        <a href="#">Shotgun ammo</a>
+                        <a href="#">Riffle ammo</a>
+    
+    
+                    </nav>
+                </div>
+                <div class="dropdown-menu menu-3">
+                    <button id="button-3" class="dropdown-button">ACCESSORIES</button>
+                    <nav id="dropdown-3" class="dropdown-content hide-list">
+                        <a href="#">Belts & holsters</a>
+                        <a href="#"> Eye & ear protection</a>
+                        <a href="#"> Optics & scopes</a>
+    
+                    </nav>
+                </div>
+    
+                <div class="dropdown-menu">
+                    <button id="button-4" class="dropdown-button">SALE</button>
+                    <nav id="dropdown-4" class="dropdown-content hide-list">
+                        <a href="#">Firearms</a>
+                        <a href="#">Ammunition</a>
+                        <a href="#">Accessories</a>
+    
+                    </nav>
+                </div>
+    
+    
+            </div>
+        </header>
+<div id="overview-content">
+<div id="filter">
+    <div id="filter-card">
+         <p>FILTER RESULTS</p>
+    </div>
+   
+   
+</div>
+<div id="browse">
+    <p>Browsing products</p> 
+    <div>
+        <div id="sort-by-field">
+             <label for="sort-by">Sort by</label>
+        <select name="sort" id="sort-by">
+            <option value="PLH">Price: Ascending</option>
+            <option value="PHL">Price: Descending</option>
+            <option value="B">Brand: A-Z</option>
+            <option value="B">Brand: Z-A</option>
+        </select> 
+        </div>
+      <div id="results-field">
+          <label for="results-per-page">Results per page</label>
+        <select name="results" id="results-per-page">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+        </select> 
+      </div>
+      <div id="user-cards"></div>
+      <div>
+          <div id="sort-by-field1">
+            <label for="sort-by1">Sort by</label>
+            <select name="sort" id="sort-by1">
+                <option value="PLH">Price: Ascending</option>
+                <option value="PHL">Price: Descending</option>
+                <option value="B">Brand: A-Z</option>
+                <option value="B">Brand: Z-A</option>
+            </select> 
+          </div>
+          <div id="results-count"></div>
+      </div>
+       
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <div id="first-footer" class="flex">
+        <p>Start your 30-day free trial today</p>
+        <button class="green-button">TAKE A SHOT</button>
+    </div>
+    <div id="second-footer" class="flex">          
+            <p>2019 The Website, Inc.</p>         
+        <div class="footer-block">
+           <p>ABOUT</p> 
+            <a href="#index.html">Team</a>
+            <a href="#index.html">Jobs</a>
+            <a href="#index.html">Blog</a>
+            <a href="#index.html">Press</a>
+        </div>
+        <div class="footer-block">
+           <p>HELP</p> 
+            <a href="#index.html">FAQ</a>
+            <a href="#index.html">Security</a>
+            <a href="#index.html">Terms of service</a>
+            <a href="#index.html">Privacy policy</a>
+        </div>
+        <div class="footer-block">
+           <p>CONNECT</p> 
+            <a href="#index.html">Facebook</a>
+            <a href="#index.html">Youtube</a>
+            <a href="#index.html">Twitter</a>
+            <a href="#index.html">Instagram</a>
+        </div>
+    </div>
+</footer>
+        </div>
+        <script src="/Products overview/productsOverview.js"></script>
+</body>
+</html>

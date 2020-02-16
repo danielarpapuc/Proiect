@@ -2,7 +2,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
  
+  #page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
   #sign-up-container {
+    
     height: 500px;
     width: 1000px;
     background-color: #ececec;

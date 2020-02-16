@@ -57,10 +57,13 @@ border-color: transparent;
 background-color: transparent;   
 i {
     font-size: 300%;
-    color: $headerDark;
+    color: $headerLight;
 }
 &:hover {
     background-color: $transparentLight;
+    i {
+        color: white;
+    }
 }
         }
 #arrow-left {
@@ -76,22 +79,24 @@ i {
         height: 100%;
     }
 }
-#small-hero {
-    height: 30vh;
-    background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/01/19/30243/fbdecd3f7e10f20069f968ad1df48666-700.jpg") center;
-display: none;
-}
+// #small-hero {
+//     height: 30vh;
+//     background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/01/19/30243/fbdecd3f7e10f20069f968ad1df48666-700.jpg") center;
+// }
 #semi-display {
+    @include displayFlex(row);
     height: 80vh;
     background-color: $signUpLavender;
 }
 }
 
-// #testing {
+// .popup {
+//     @include displayFlex(row);
 //     width: 100%;
 //     height: 100%;
-//     background-color: $transparentLight;
+//     background-color: $transparentOverlay;
 //     top: 0;
 //     bottom: 0;
 //     position: fixed;
+    // display: none;
 // }
