@@ -1,3 +1,7 @@
+* {
+  border: 1px solid red;
+}
+
 #overview-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,28 +18,28 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-align: initial;
-      -ms-flex-align: initial;
-          align-items: initial;
-  background-color: #F4FBFB;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-color: #bdcebe;
   padding: 10px;
 }
 
 #overview-content #filter #filter-card {
   width: 250px;
   height: 450px;
-  background-color: #bdcebe;
+  background-color: #F4FBFB;
   padding: 5px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #overview-content #browse {
-  width: 1000px;
-  height: 1000px;
   padding: 5px 15px;
 }
 
-#overview-content #browse div {
+#overview-content #browse #change-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +60,7 @@
           justify-content: flex-start;
 }
 
-#overview-content #browse div div {
+#overview-content #browse #change-filter .fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,13 +82,125 @@
   margin-right: 15px;
 }
 
-#overview-content #browse div div label {
+#overview-content #browse #change-filter .fields label {
   font-size: 85%;
 }
 
-#overview-content #browse div div select {
+#overview-content #browse #change-filter .fields select {
   width: 150px;
   padding: 10px 0px;
   border-radius: 5px;
+}
+
+#overview-content #browse #user-cards {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#overview-content #browse #user-cards .user-card {
+  position: relative;
+  width: 25%;
+  background-color: white;
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#overview-content #browse #user-cards .user-card p {
+  width: 80%;
+  font-size: 75%;
+}
+
+#overview-content #browse #user-cards .user-card .card-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  background-color: #ffffffe6;
+  display: none;
+}
+
+#overview-content #browse #user-cards .user-card .card-overlay .details {
+  background-color: transparent;
+  padding: 10px 20px;
+  color: #243444;
+  font-weight: bold;
+  width: 150px;
+  font-size: 12px;
+  border: 2px solid #243444;
+  margin-bottom: 20px;
+}
+
+#overview-content #browse #user-cards .user-card .card-overlay .details:hover {
+  border-color: #2d9c3a;
+}
+
+#overview-content #browse #user-cards .user-card .card-overlay .add-to-cart {
+  background-color: #243444;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  font-size: 12px;
+  border: 2px solid #243444;
+}
+
+#overview-content #browse #user-cards .user-card .card-overlay .add-to-cart:hover {
+  background-color: #2d9c3a;
+  border-color: #2d9c3a;
+}
+
+#overview-content #browse #user-cards .user-card:hover .card-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=stylesForProductsOverview.css.map */

@@ -687,3 +687,5 @@
     }
  }
 }
+
+on sale: yes/no; percentage off //

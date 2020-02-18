@@ -1,35 +1,39 @@
 @import "mixins";
 @import "colors";
+* {
+    border: 1px solid red;
+}
 #overview-content {
     // * {
     //     border: 1px solid red;
     // }
 @include displayFlex(row);
-align-items: initial;
- background-color: $signUpLavender;
+align-items: flex-start;
+align-content: space-between;
+   background-color: #bdcebe;
   padding: 10px;
-#filter {
-    
+#filter {    
     #filter-card {
         width: 250px;
     height: 450px;
-   background-color: #bdcebe;
+ background-color: $signUpLavender;
 //    background-color: #fefbd8;
 //    background-color: #f0f0f0;
    padding: 5px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     }
 // p {}
 
 }
 #browse {
-width: 1000px;
-height: 1000px;
+// width: 1000px;
+// height: 1000px;
 padding: 5px 15px;
-div{
+// p {}
+#change-filter{
     @include displayFlex(row);
     justify-content: flex-start;
-    div {
+    .fields {
         @include displayFlex(column);
         align-items: flex-start;
         margin-right: 15px;
@@ -43,6 +47,53 @@ div{
             //  option {}
          }
     }   
+}
+#user-cards {
+    padding: 10px 0px;
+    @include displayFlex(row);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .user-card {
+        position: relative;
+        width: 25%;
+        background-color: white;
+        border: 2px solid #ececec;
+        border-radius: 10px;
+        // box-sizing: border-box;
+        margin-bottom: 20px;
+        // height: 250px;
+        @include displayFlex(column);
+        // .user-card > * {
+        //     margin: 0px;
+        // }
+        // img {}
+        p {
+          width: 80%;   
+          font-size: 75%;  
+        //   fo       
+        }
+        // h3 {}
+        .card-overlay {
+            @include displayFlex(column);
+            width: 90%;
+            height: 90%;
+            // box-sizing: border-box;
+            position: absolute;
+            background-color: $transparentWhite;
+            display: none;
+            .details {
+                @include detailsButton;
+                margin-bottom: 20px;
+            }
+            .add-to-cart {
+                @include greenButton;
+            }
+        }
+        &:hover {
+            .card-overlay {
+display: flex;            }
+        }
+    }
 }
 }
 

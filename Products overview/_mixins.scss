@@ -1,3 +1,4 @@
+@import "colors";
 @mixin displayFlex ($flexDirection) {
     display: flex;
     flex-direction: $flexDirection;
@@ -8,15 +9,28 @@
       }
 
 @mixin greenButton {
-          background-color:  #66B76F;
-          padding: 5px 20px;
+          background-color:  $headerDark;
+          padding: 10px 20px;
           color: white;
           font-weight: bold;
-          // width: 230px;
+          width: 150px;
           font-size: 12px;
-          border: none;
+          border: 2px solid $headerDark;
           &:hover {
-            background-color:#2d9c3a;
-
+            background-color:$darkGreenForButton;
+            border-color: $darkGreenForButton;
           }
       }
+
+      @mixin detailsButton {
+        background-color:  transparent;
+          padding: 10px 20px;
+          color: $headerDark;
+          font-weight: bold;
+          width: 150px;
+          font-size: 12px;
+          border: 2px solid $headerDark;
+          &:hover {
+            border-color: $darkGreenForButton;
+          }
+    }
