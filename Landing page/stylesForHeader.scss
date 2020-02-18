@@ -81,7 +81,7 @@ position: absolute;
   font-size: 85%;
   width: 200%;
   &:hover {
-    background-color: transparent;
+    background-color: $transparentOverlay;
   }
 }
 }

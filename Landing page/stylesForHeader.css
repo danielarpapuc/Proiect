@@ -127,7 +127,7 @@
 }
 
 #second-header .dropdown-menu .dropdown-content a:hover {
-  background-color: transparent;
+  background-color: #00000080;
 }
 
 * {
