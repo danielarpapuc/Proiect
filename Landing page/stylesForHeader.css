@@ -127,7 +127,8 @@
 }
 
 #second-header .dropdown-menu .dropdown-content a:hover {
-  background-color: #00000080;
+  background-color: black;
+  z-index: 1;
 }
 
 * {
