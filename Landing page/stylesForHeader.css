@@ -1,3 +1,7 @@
+* > {
+  font-family: Arial;
+}
+
 #first-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,15 +56,69 @@
   padding-right: 30px;
 }
 
-#first-header ul li i {
-  color: #243444;
-  font-size: 170%;
-}
-
 #first-header ul li a {
   text-decoration: none;
   color: #243444;
   font-size: 75%;
+}
+
+#first-header ul li a i {
+  position: relative;
+  color: #243444;
+  font-size: 170%;
+}
+
+#first-header ul li a i #cart-items {
+  position: absolute;
+  top: -20px;
+  left: -3px;
+  color: white;
+  padding: 3px;
+  font-size: 60%;
+  border-radius: 50%;
+  background-color: red;
+}
+
+#first-header ul li a i #shopping-cart {
+  position: absolute;
+  width: 30vw;
+  background-color: white;
+  font-size: 60%;
+}
+
+#first-header ul li a i #shopping-cart * {
+  border: 1px solid black;
+}
+
+#first-header ul li a i #shopping-cart thead tr th {
+  -webkit-column-span: 4;
+          column-span: 4;
+  text-align: center;
+}
+
+#first-header ul li a i #shopping-cart tbody {
+  text-align: center;
+}
+
+#first-header ul li a i #shopping-cart tbody .tr-product .td-image img {
+  width: 30%;
+  height: 30%;
+}
+
+#first-header ul li a i #shopping-cart tbody .tr-product .td-price {
+  text-align: right;
+}
+
+#first-header ul li a i #shopping-cart tbody .tr-product .td-x > button {
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+}
+
+#first-header ul li a i #shopping-cart tbody .tr-product .td-x > button:hover {
+  color: black;
 }
 
 #second-header {
@@ -92,7 +150,6 @@
 
 #second-header .dropdown-menu {
   text-decoration: none;
-  position: relative;
 }
 
 #second-header .dropdown-menu:hover .dropdown-content {
@@ -128,14 +185,9 @@
 
 #second-header .dropdown-menu .dropdown-content a:hover {
   background-color: black;
-  z-index: 1;
 }
 
-* {
-  font-family: Arial;
-}
-
-#logo {
+#website-logo #logo {
   width: 25%;
   height: 25%;
   -webkit-transition: -webkit-transform 0.1s;
@@ -144,8 +196,13 @@
   transition: transform 0.1s, -webkit-transform 0.1s;
 }
 
-#logo:hover {
+#website-logo #logo:hover {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+#website-logo p:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=stylesForHeader.css.map */

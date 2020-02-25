@@ -2,6 +2,9 @@
 // $headerLighter: #ececec;
 $displayDefault: inline-block;
 $fontPrimary: Arial;
+* > {
+  font-family: $fontPrimary;
+}
 @import "mixins";
 #first-header {
         @include displayFlex(row);
@@ -22,15 +25,114 @@ $fontPrimary: Arial;
     &:not(:last-child){
        padding-right: 30px;  
     }
-    display: $displayDefault;
-    i {
-      color: $headerDark;  
-      font-size: 170%;
-    }
+    display: $displayDefault;   
     a {
     text-decoration: none;
     color: $headerDark;
     font-size: 75%;
+     i {
+       position: relative;
+      color: $headerDark;  
+      font-size: 170%;
+     #cart-items {
+      position: absolute;
+      top: -20px;
+      left: -3px;
+      color: white;
+      padding: 3px;
+     font-size: 60%;
+      border-radius: 50%;
+      background-color: red;
+      // border: 1px solid black;
+    }
+//     #shopping-cart {
+//       position: absolute;
+//       display: block;
+//       width: 25vw;
+//       background-color: white;
+//       &>* {
+//         border: 1px solid green;
+//       }
+//       ul {
+//         li {       
+//       @include displayFlex(row);
+//       justify-content: space-between;
+//         z-index: 10; 
+//         img {
+//           width: 20%;
+//           height: 20%;
+//         }
+//       //   div
+//       //  h5
+//         button {
+          // border-radius: 50%;
+//           border: none;
+//           background-color: transparent;
+//           color: red;
+//           font-weight: bold;
+// &:hover {
+//   color: black;
+// }
+//         }
+//       } 
+//       }
+     
+//     }
+
+
+
+#shopping-cart {
+        position: absolute;
+        // display: block;
+        width: 30vw;
+        background-color: white;
+        font-size: 60%;
+        & * {
+          border: 1px solid black;
+        }
+thead{
+  
+  tr {
+  
+     th { column-span: 4;
+    text-align: center;
+  }
+  } 
+  }
+tbody {
+  text-align: center;
+  
+  .tr-product {
+    .td-image {
+      img {
+        width: 30%;
+                height: 30%;
+      }
+      
+    }
+// .td-name {}
+.td-price {
+  text-align: right;
+}
+.td-x > button{
+  border-radius: 50%;
+            border: none;
+            background-color: transparent;
+            color: red;
+            font-weight: bold;
+  &:hover {
+    color: black;
+  }
+}
+  }
+}
+
+
+}
+     }
+
+
+    
       }
     }
 } 
@@ -55,7 +157,7 @@ $fontPrimary: Arial;
 }
       }
 // box-sizing: border-box;  
-position: relative;
+// position: relative;
   .dropdown-button {
     border: none;
     background-color: transparent;
@@ -84,7 +186,7 @@ position: absolute;
   width: 200%;
   &:hover {
     background-color: black;
-    z-index: 1;
+    // z-index: 10;
   }
 }
 }
@@ -92,21 +194,19 @@ position: absolute;
 }
 // .show-list {display: block;}
 
-* {
-  font-family: $fontPrimary;
-    // border: 1px solid red;
-}
-
-#logo {
+#website-logo {
+  #logo {
   width: 25%;
   height: 25%;
   // display: inline;
   transition: transform 0.1s;
   &:hover {
     transform: rotate(-90deg);
+    cursor: pointer;
   }
 }
-
-// #background-content {
-//   background-image: url("https://cdn.hipwallpaper.com/i/24/13/RY7lIs.jpg");
-// }
+p:hover {
+  cursor: pointer;
+   
+}
+}

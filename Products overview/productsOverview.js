@@ -1,7 +1,7 @@
 // const sortBy = document.getElementById("sort-by-field")
 // document.getElementById("sort-by1").innerHTML = sortBy;
 
-document.getElementById("logo").addEventListener("click", () => {
+document.getElementById("website-logo").addEventListener("click", () => {
     window.location.href = "../Landing page/landingPage.html";
 })
 
@@ -126,7 +126,7 @@ const productsForCards = [{
   {
     id: '2-EA610066',
     productName: 'EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25" Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating',
-    productType: 'variant',
+    productType: 'Pistol',
     brand: 'EAA',
     price: {
       value: 5088.2,
@@ -669,11 +669,11 @@ const productsForCards = [{
   }
 ];
 console.log(productsForCards)
-
+var userCards = document.getElementById("user-cards")
 function createUserCard (obj) {
       var userCard = document.createElement("div");
 userCard.className = "user-card";
-var userCards = document.getElementById("user-cards")
+userCard.setAttribute("id", `${obj.id}`);
 userCards.appendChild(userCard);
 userCard.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small[0].alt}>
 <p>${obj.productName}</p>            
@@ -684,9 +684,19 @@ userCard.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small
 </div>`
 }
 for (product of productsForCards) {
-
   createUserCard(product);
 }
 // for (var i = 1; i <= 17; i ++) {
 //     createUserCard();
 // }
+userCards.addEventListener("click", addToCart);
+function addToCart (e) {
+  var cardTarget = e.target.parentNode.parentNode;
+  // console.log(cardTarget)
+  // console.log(cardTarget.id)
+  productsForCards.filter((obj) => {    
+    if (obj.id === cardTarget.id) {
+      console.log (obj)
+    }
+  })
+}

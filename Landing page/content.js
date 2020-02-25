@@ -660,6 +660,18 @@ const productsForCards = [{
 }
 ];
 // console.log(productsForCards)
+const secondHeader = document.getElementById("second-header");
+// console.log(secondHeader);
+secondHeader.addEventListener("click", (e) => {
+  if (e.target !== e.currentTarget) {
+    window.location.href = "../Products overview/productsOverview.html";
+  //   console.log(e.target);
+  // console.log(e.currentTarget)
+  }  
+  // e.stopPropagation();
+
+  });
+
 var userCardsCarousel = document.getElementById("product-cards")
 function createUserCard (obj, containerForCards) {
     var userCard = document.createElement("div");

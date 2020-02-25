@@ -27,7 +27,7 @@ product_706397926069: {
           title: "Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5\" Barrel 30 Rounds with a SB Tactical Pistol Brace Black"
         }
       ],
-      "small": [
+      small: [
         {
           alt: "Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5\" Barrel 30 Rounds with a SB Tactical Pistol Brace Black",
           url: "https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa7d75f40/large/gun-916558.jpg?sw=146&sh=146",
