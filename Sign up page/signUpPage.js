@@ -1,3 +1,16 @@
+
+ const firstName = document.getElementById("first-name");
+    const lastName = document.getElementById("last-name");
+    const emailAddress = document.getElementById("email-address");
+    const password = document.getElementById("password");
+    const city = document.getElementById("city");
+    const country = document.getElementById("country");
+const userDatabase = [{firstName: "Marcel",
+lastName: "Userescu",
+emailAddress: "marcel@gmail.com",
+password: "1234@asdf",
+city: "Iasi",
+country: "Country 1"}]; 
 document.getElementById("logo").addEventListener("click", redirectToHomepage)
 function redirectToHomepage () {
     window.location.href = "../Landing page/landingPage.html";
@@ -18,20 +31,18 @@ eyeIconButton.addEventListener("click", showPassword);
     }
  }
 document.getElementById("city").addEventListener("change", unlockCountryField);
-function unlockCountryField() {
-    const countryField = document.getElementById("country");
-    countryField.firstElementChild.textContent = "Select country";
-    countryField.removeAttribute("disabled");
-   countryField.style.backgroundColor = "white";
+function unlockCountryField() {   
+    country.firstElementChild.textContent = "Select country";
+    country.removeAttribute("disabled");
+   country.style.backgroundColor = "white";
 }
 
-
-
-
-
-
-
-
+// const signUp = document.getElementById("sign-up");
+// signUp.addEventListener("click", createNewUser)
+// function createNewUser () {
+//     console.log("ttttt");
+//     console.log(countryFied.value);
+// }
 
 
 
@@ -50,27 +61,21 @@ document.getElementById("sign-up").addEventListener("click", createUserAccount);
 //             }
 
 // }
- const userDatabase = []; 
+    
 function createUserAccount(e) {   
          e.preventDefault(); 
-   const firstNameValue = document.getElementById("first-name").value;
-    const lastNameValue = document.getElementById("last-name").value;
-    const emailAddressValue = document.getElementById("email-address").value;
-    const passwordValue = document.getElementById("password").value;
-    const cityValue = document.getElementById("city").value;
-    const countryValue = document.getElementById("country").value;
-    const userAccount = {
-        firstName: firstNameValue,
-        lastName: lastNameValue,
-        emailAddress: emailAddressValue,
-        password: passwordValue,
-        city: cityValue,
-        country: countryValue
-    }
+         const userAccount = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        emailAddress: emailAddress.value,
+        password: password.value,
+        city: city.value,
+        country: country.value
+    }    
 // const newUser = new UserAccount(firstNameValue, lastNameValue, emailAddressValue, passwordValue, cityValue, countryValue)
 //     console.log(newUser.bundleUserInfo());
     userDatabase.push(userAccount);
-    console.log(userDatabase)
+    console.log(userDatabase);
 }
 
 
