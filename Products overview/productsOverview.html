@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Overview</title>
-<link rel="stylesheet" href="/Landing page/stylesForHeader.css">
-<link rel="stylesheet" href="/Landing page/stylesForFooter.css">
-<link rel="stylesheet" href="/Products overview/stylesForProductsOverview.css">
-<script src="https://kit.fontawesome.com/7fefe15b41.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Landing page/stylesForHeader.css">
+    <link rel="stylesheet" href="/Landing page/stylesForFooter.css">
+    <link rel="stylesheet" href="/Products overview/stylesForProductsOverview.css">
+    <script src="https://kit.fontawesome.com/7fefe15b41.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="page-container">
         <header>
@@ -18,29 +20,20 @@
                     <p>Toys R +</p>
                 </div>
                 <ul id="first-header-list">
-                    <li class="first-header-list-items">    
+                    <li class="first-header-list-items">
                         <a href="#index"><i class="fas fa-shopping-cart">
-                            <h6 id="cart-items">3</h6>
-                            <!-- <div id="shopping-cart">
-                                <ul > Your shopping cart
-                                    <li>
-                                        <img src="https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe5eb9e65/large/2-ea610066.jpg?sw=146&sh=146" alt="EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25 Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating">
-                                        <div>
-                                            <h5>EAA</h5>
-                                            <h6>Pistol</h6>
-                                        </div>
-                                        <h5>$5,088.20</h5>
-                                        <button>X</button>
-                                    </li>
-                                    <li>test</li>
-                                    <li>test</li>
-                                </ul> 
-                                <p>Total</p>
-                            </div> -->
-                            <table id="shopping-cart">
+                                <h6 id="cart-items"></h6>
+                                <div id="shopping-cart">
+                                    <p>Your shopping cart</p>
+                                    <ul id="shopping-list">                               
+                                    </ul>
+                                    <br>
+                                    <p>Total: </p>
+                                </div>
+                                <!-- <table id="shopping-cart">
                                 <thead>
                                     <tr>
-                                      <th colspan="4">
+                                      <th colspan="5">
                                       Your shopping cart  
                                   </th>    
                                     </tr>
@@ -53,6 +46,11 @@
                                     <h5>EAA</h5>
                                     <h6>Pistol</h6>
                                    </td>
+                                   <td class="td-number-of-items">
+                                       <button id="minus">-</button>
+                                       <p id="items-number">1</p>
+                                       <button id="plus">+</button>
+                                   </td>
                                    <td class="td-price">$5,088.20</td>
                                    <td class="td-x"><Button>X</Button></td>
                                </tr>
@@ -63,10 +61,10 @@
                                    <td>$5,088.20</td>
                                </tr>
                            </tbody> 
-                            </table>
-                          
-                                
-                        </i> Your Cart</a></li>
+                            </table> -->
+
+
+                            </i> Your Cart</a></li>
                     <li class="first-header-list-items">
                         <a href="../Sign up page/signUpPage.html">
                             <i class="fas fa-user-circle"></i> Register
@@ -79,11 +77,11 @@
                 <div class="dropdown-menu" id="menu-1">
                     <button id="button-1" class="dropdown-button">FIREARMS</button>
                     <nav id="dropdown-1" class="dropdown-content hide-list">
-                        <a href="footer.html">Handguns</a>
-                        <a href="#o2">Rifles</a>
-                        <a href="#o3">Shotguns</a>
-                        <a href="#">Revolvers</a>      
-    
+                        <a href="#">Handguns</a>
+                        <a href="#">Rifles</a>
+                        <a href="#">Pistols</a>
+                        <a href="#">Revolvers</a>
+
                     </nav>
                 </div>
                 <div class="dropdown-menu menu-2">
@@ -91,8 +89,8 @@
                     <nav id="dropdown-2" class="dropdown-content hide-list">
                         <a href="#">Shotgun ammo</a>
                         <a href="#">Riffle ammo</a>
-    
-    
+
+
                     </nav>
                 </div>
                 <div class="dropdown-menu menu-3">
@@ -101,52 +99,52 @@
                         <a href="#">Belts & holsters</a>
                         <a href="#"> Eye & ear protection</a>
                         <a href="#"> Optics & scopes</a>
-    
+
                     </nav>
                 </div>
-    
+
                 <div class="dropdown-menu">
                     <button id="button-4" class="dropdown-button">SALE</button>
                     <nav id="dropdown-4" class="dropdown-content hide-list">
                         <a href="#">Firearms</a>
                         <a href="#">Ammunition</a>
                         <a href="#">Accessories</a>
-    
+
                     </nav>
                 </div>
-    
-    
+
+
             </div>
         </header>
-<div id="overview-content">
-<div id="filter">
-    <div id="filter-card">
-         <p>FILTER RESULTS</p>
-    </div>   
-   
-</div>
-<div id="browse">
-    <p>Browsing products</p> 
-    <div id="change-filter">
-        <div id="sort-by-field" class="fields">
-             <label for="sort-by">Sort by</label>
-        <select name="sort" id="sort-by">
-            <option value="PLH">Price: Ascending</option>
-            <option value="PHL">Price: Descending</option>
-            <option value="B">Brand: A-Z</option>
-            <option value="B">Brand: Z-A</option>
-        </select> 
-        </div>
-      <div id="results-field" class="fields">
-          <label for="results-per-page">Results per page</label>
-        <select name="results" id="results-per-page">
-            <option value="10">12</option>
-            <option value="25">36</option>
-            <option value="50">120</option>
-        </select> 
-      </div>
-     <button class="fields">FILTER</button>
-      <!-- <div>
+        <div id="overview-content">
+            <div id="filter">
+                <div id="filter-card">
+                    <p>FILTER RESULTS</p>
+                </div>
+
+            </div>
+            <div id="browse">
+                <p>Browsing products</p>
+                <div id="change-filter">
+                    <div id="sort-by-field" class="fields">
+                        <label for="sort-by">Sort by</label>
+                        <select name="sort" id="sort-by">
+                            <option value="PLH">Price: Ascending</option>
+                            <option value="PHL">Price: Descending</option>
+                            <option value="B">Brand: A-Z</option>
+                            <option value="B">Brand: Z-A</option>
+                        </select>
+                    </div>
+                    <div id="results-field" class="fields">
+                        <label for="results-per-page">Results per page</label>
+                        <select name="results" id="results-per-page">
+                            <option value="10">12</option>
+                            <option value="25">36</option>
+                            <option value="50">120</option>
+                        </select>
+                    </div>
+                    <button class="fields">FILTER</button>
+                    <!-- <div>
           <div id="sort-by-field1">
             <label for="sort-by1">Sort by</label>
             <select name="sort" id="sort-by1">
@@ -158,10 +156,10 @@
           </div>
           <div id="results-count"></div>
       </div> -->
-       
-    </div>
-    <div id="user-cards"> 
-        <!-- <div class="user-card">
+
+                </div>
+                <div id="user-cards">
+                    <!-- <div class="user-card">
             <img src="https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa7d75f40/large/gun-916558.jpg?sw=146&sh=146" alt='Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5\" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'>
             <p>Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5\" Barrel 30 Rounds with a SB Tactical Pistol Brace Black</p>            
             <h3>$859</h3>
@@ -206,41 +204,42 @@
             <h3>$859</h3>
             <!-- <p>$859</p> -->
 
-        </div>
-    </div> 
-</div>
-</div>
-<footer id="footer">
-    <div id="first-footer" class="flex">
-        <p>Start your 30-day free trial today</p>
-        <button class="green-button">TAKE A SHOT</button>
-    </div>
-    <div id="second-footer" class="flex">          
-            <p>2019 The Website, Inc.</p>         
-        <div class="footer-block">
-           <p>ABOUT</p> 
-            <a href="#index.html">Team</a>
-            <a href="#index.html">Jobs</a>
-            <a href="#index.html">Blog</a>
-            <a href="#index.html">Press</a>
-        </div>
-        <div class="footer-block">
-           <p>HELP</p> 
-            <a href="#index.html">FAQ</a>
-            <a href="#index.html">Security</a>
-            <a href="#index.html">Terms of service</a>
-            <a href="#index.html">Privacy policy</a>
-        </div>
-        <div class="footer-block">
-           <p>CONNECT</p> 
-            <a href="#index.html">Facebook</a>
-            <a href="#index.html">Youtube</a>
-            <a href="#index.html">Twitter</a>
-            <a href="#index.html">Instagram</a>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
+    <footer id="footer">
+        <div id="first-footer" class="flex">
+            <p>Start your 30-day free trial today</p>
+            <button class="green-button">TAKE A SHOT</button>
         </div>
-        <script src="/Products overview/productsOverview.js"></script>
+        <div id="second-footer" class="flex">
+            <p>2019 The Website, Inc.</p>
+            <div class="footer-block">
+                <p>ABOUT</p>
+                <a href="#index.html">Team</a>
+                <a href="#index.html">Jobs</a>
+                <a href="#index.html">Blog</a>
+                <a href="#index.html">Press</a>
+            </div>
+            <div class="footer-block">
+                <p>HELP</p>
+                <a href="#index.html">FAQ</a>
+                <a href="#index.html">Security</a>
+                <a href="#index.html">Terms of service</a>
+                <a href="#index.html">Privacy policy</a>
+            </div>
+            <div class="footer-block">
+                <p>CONNECT</p>
+                <a href="#index.html">Facebook</a>
+                <a href="#index.html">Youtube</a>
+                <a href="#index.html">Twitter</a>
+                <a href="#index.html">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="/Products overview/productsOverview.js"></script>
 </body>
+
 </html>

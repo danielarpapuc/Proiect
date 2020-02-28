@@ -1,8 +1,9 @@
 const productsForCards = [{
     id: 'GUN-916558',
-  productName: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+  productName: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
   productType: 'variant',
   brand: 'Springfield',
+  category: "FIREARMS",
   price: {
     value: 859,
     currency: 'USD',
@@ -12,43 +13,43 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa7d75f40/large/gun-916558.jpg?sw=800&sh=800',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical rifle Brace Black'
       },
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwdf064139/large/gun-916558_a.jpg?sw=800&sh=800',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black'
       },
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw6595f661/large/gun-916558_b.jpg?sw=800&sh=800',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black'
       }
     ],
     small: [
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa7d75f40/large/gun-916558.jpg?sw=146&sh=146',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black'
       },
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwdf064139/large/gun-916558_a.jpg?sw=146&sh=146',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black'
       },
       {
-        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black',
+        alt: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw6595f661/large/gun-916558_b.jpg?sw=146&sh=146',
-        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Pistol 7.5" Barrel 30 Rounds with a SB Tactical Pistol Brace Black'
+        title: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black'
       }
     ]
   }
 },
 {
   id: 'GUN-8570',
-  productName: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+  productName: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
   productType: 'variant',
   brand: 'Ruger',
   price: {
@@ -60,56 +61,56 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe2a1ed57/large/gun-8570.jpg?sw=800&sh=800',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw3b66dc0e/large/gun-8570_a.jpg?sw=800&sh=800',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwf8e180bc/large/gun-8570_b.jpg?sw=800&sh=800',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw8dae7780/large/gun-8570_c.jpg?sw=800&sh=800',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw48c02c32/large/gun-8570_d.jpg?sw=800&sh=800',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       }
     ],
     small: [
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe2a1ed57/large/gun-8570.jpg?sw=146&sh=146',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw3b66dc0e/large/gun-8570_a.jpg?sw=146&sh=146',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwf8e180bc/large/gun-8570_b.jpg?sw=146&sh=146',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw8dae7780/large/gun-8570_c.jpg?sw=146&sh=146',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       },
       {
-        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
+        alt: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw48c02c32/large/gun-8570_d.jpg?sw=146&sh=146',
-        title: 'Ruger AR-556 NATO Semi Auto AR-15 Pistol with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
+        title: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black'
       }
     ]
   }
@@ -276,7 +277,7 @@ const productsForCards = [{
 },
 {
   id: '2-BANDT-36077',
-  productName: 'B&T APC308 Semi Auto Pistol .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
+  productName: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
   productType: 'variant',
   brand: 'B&T AG',
   price: {
@@ -288,16 +289,16 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'B&T APC308 Semi Auto Pistol .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
+        alt: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwb68f12b4/large/2-bandt-36077.jpg?sw=800&sh=800',
-        title: 'B&T APC308 Semi Auto Pistol .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black'
+        title: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black'
       }
     ],
     small: [
       {
-        alt: 'B&T APC308 Semi Auto Pistol .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
+        alt: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwb68f12b4/large/2-bandt-36077.jpg?sw=146&sh=146',
-        title: 'B&T APC308 Semi Auto Pistol .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black'
+        title: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black'
       }
     ]
   }
@@ -342,7 +343,7 @@ const productsForCards = [{
 },
 {
   id: '2-POF01600',
-  productName: 'POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
+  productName: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
   productType: 'variant',
   brand: 'Patriot Ordnance Factory',
   price: {
@@ -354,16 +355,16 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
+        alt: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw6864fde6/large/2-pof01600.jpg?sw=800&sh=800',
-        title: 'POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish'
+        title: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish'
       }
     ],
     small: [
       {
-        alt: 'POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
+        alt: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw6864fde6/large/2-pof01600.jpg?sw=146&sh=146',
-        title: 'POF USA Revolution DI .308 Winchester Semi Auto Pistol 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish'
+        title: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish'
       }
     ]
   }
@@ -492,7 +493,7 @@ const productsForCards = [{
 },
 {
   id: '2-SPKSTP5610-M1R',
-  productName: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
+  productName: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
   productType: 'variant',
   brand: 'Spikes Tactical',
   price: {
@@ -504,16 +505,16 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
+        alt: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw46d57442/large/2-spkstp5610-m1r.jpg?sw=800&sh=800',
-        title: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish'
+        title: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish'
       }
     ],
     small: [
       {
-        alt: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
+        alt: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw46d57442/large/2-spkstp5610-m1r.jpg?sw=146&sh=146',
-        title: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Pistol 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish'
+        title: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish'
       }
     ]
   }
@@ -548,7 +549,7 @@ const productsForCards = [{
 },
 {
   id: 'FC-680017478001',
-  productName: 'Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth',
+  productName: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth',
   productType: 'master',
   brand: 'Maxim Defense',
   price: {
@@ -560,16 +561,16 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth',
+        alt: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa9af2fcb/large/111193.jpg?sw=800&sh=800',
-        title: 'Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth'
+        title: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth'
       }
     ],
     small: [
       {
-        alt: 'Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth',
+        alt: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwa9af2fcb/large/111193.jpg?sw=146&sh=146',
-        title: 'Maxim Defense PDX 7.62x39 Semi Auto Pistol 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Pistol Stabilizing Brace Arid Flat Dark Earth'
+        title: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth'
       }
     ]
   }
@@ -632,7 +633,7 @@ const productsForCards = [{
 },
 {
   id: 'FC-811607032352',
-  productName: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish',
+  productName: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish',
   productType: 'master',
   brand: 'KRISS USA',
   price: {
@@ -644,16 +645,16 @@ const productsForCards = [{
   images: {
     large: [
       {
-        alt: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish',
+        alt: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw8e95ae54/large/2-krkv10-psbap31.jpg?sw=800&sh=800',
-        title: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish'
+        title: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish'
       }
     ],
     small: [
       {
-        alt: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish',
+        alt: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish',
         url: 'https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dw8e95ae54/large/2-krkv10-psbap31.jpg?sw=146&sh=146',
-        title: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Pistol 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish'
+        title: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Pistol Stabilizing Brace Alpine White Finish'
       }
     ]
   }
@@ -676,7 +677,6 @@ var userCardsCarousel = document.getElementById("product-cards")
 function createUserCard (obj, containerForCards) {
     var userCard = document.createElement("div");
 userCard.className = "user-card";
-
 containerForCards.appendChild(userCard);
 userCard.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small[0].alt}>
 <p>${obj.brand}</p>`

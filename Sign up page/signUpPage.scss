@@ -46,25 +46,25 @@ $yellowForButton: #C7B178;
             height: 100%;
             width: 100%;
             background-color: rgba($color: #000000, $alpha: 0.5);
-            .hero-content {
+            // .hero-content {
               // h2 {
               //     color: white;
               //   }
-              .hero-button {
-                      padding: 7px 30px;
-                    border: 1px solid #aabaca;
-                    color: #aabaca;
-                    background-color: transparent;
-                    font-size: 50%;
-                    font-weight: bold;
-                  &:hover {
-                    /* background-color: rgb(56, 44, 44); */
-                    color: $yellowForButton;
-                    border: 2px solid;
-                    /* opacity: 0.8; */       
-              }
-            }
-          }
+            //   .hero-button {
+            //           padding: 7px 30px;
+            //         border: 1px solid #aabaca;
+            //         color: #aabaca;
+            //         background-color: transparent;
+            //         font-size: 50%;
+            //         font-weight: bold;
+            //       &:hover {
+            //         /* background-color: rgb(56, 44, 44); */
+            //         color: $yellowForButton;
+            //         border: 2px solid;
+            //         /* opacity: 0.8; */       
+            //   }
+            // }
+          // }
 
       }
       #sign-up-form {

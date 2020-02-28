@@ -1,7 +1,3 @@
-* > {
-  font-family: Arial;
-}
-
 #first-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,47 +73,61 @@
   font-size: 60%;
   border-radius: 50%;
   background-color: red;
+  visibility: hidden;
 }
 
 #first-header ul li a i #shopping-cart {
   position: absolute;
-  width: 30vw;
+  display: block;
+  width: 33vw;
   background-color: white;
-  font-size: 60%;
+  z-index: 10;
 }
 
-#first-header ul li a i #shopping-cart * {
-  border: 1px solid black;
+#first-header ul li a i #shopping-cart ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #acbbcb;
 }
 
-#first-header ul li a i #shopping-cart thead tr th {
-  -webkit-column-span: 4;
-          column-span: 4;
-  text-align: center;
+#first-header ul li a i #shopping-cart ul li img {
+  width: 20%;
+  height: 20%;
 }
 
-#first-header ul li a i #shopping-cart tbody {
-  text-align: center;
+#first-header ul li a i #shopping-cart ul li p {
+  font-size: 75%;
 }
 
-#first-header ul li a i #shopping-cart tbody .tr-product .td-image img {
-  width: 30%;
-  height: 30%;
+#first-header ul li a i #shopping-cart ul li .number-of-products {
+  width: 30px;
 }
 
-#first-header ul li a i #shopping-cart tbody .tr-product .td-price {
-  text-align: right;
-}
-
-#first-header ul li a i #shopping-cart tbody .tr-product .td-x > button {
+#first-header ul li a i #shopping-cart ul li button {
   border-radius: 50%;
   border: none;
   background-color: transparent;
-  color: red;
+  color: #acbbcb;
   font-weight: bold;
 }
 
-#first-header ul li a i #shopping-cart tbody .tr-product .td-x > button:hover {
+#first-header ul li a i #shopping-cart ul li button:hover {
   color: black;
 }
 
@@ -154,6 +164,7 @@
 
 #second-header .dropdown-menu:hover .dropdown-content {
   display: block;
+  width: 70px;
 }
 
 #second-header .dropdown-menu .dropdown-button {
@@ -204,5 +215,9 @@
 
 #website-logo p:hover {
   cursor: pointer;
+}
+
+* > {
+  font-family: Arial;
 }
 /*# sourceMappingURL=stylesForHeader.css.map */

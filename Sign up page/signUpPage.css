@@ -22,22 +22,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#sign-up-container .hero1 .overlay .hero-content .hero-button {
-  padding: 7px 30px;
-  border: 1px solid #aabaca;
-  color: #aabaca;
-  background-color: transparent;
-  font-size: 50%;
-  font-weight: bold;
-}
-
-#sign-up-container .hero1 .overlay .hero-content .hero-button:hover {
-  /* background-color: rgb(56, 44, 44); */
-  color: #C7B178;
-  border: 2px solid;
-  /* opacity: 0.8; */
-}
-
 #sign-up-container .hero1 #sign-up-form {
   border: 2px solid cyan;
 }

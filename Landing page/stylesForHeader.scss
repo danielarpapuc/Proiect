@@ -2,9 +2,7 @@
 // $headerLighter: #ececec;
 $displayDefault: inline-block;
 $fontPrimary: Arial;
-* > {
-  font-family: $fontPrimary;
-}
+
 @import "mixins";
 #first-header {
         @include displayFlex(row);
@@ -43,88 +41,105 @@ $fontPrimary: Arial;
      font-size: 60%;
       border-radius: 50%;
       background-color: red;
+      visibility: hidden;
       // border: 1px solid black;
     }
-//     #shopping-cart {
-//       position: absolute;
-//       display: block;
-//       width: 25vw;
-//       background-color: white;
-//       &>* {
-//         border: 1px solid green;
-//       }
-//       ul {
-//         li {       
-//       @include displayFlex(row);
-//       justify-content: space-between;
-//         z-index: 10; 
-//         img {
-//           width: 20%;
-//           height: 20%;
-//         }
-//       //   div
-//       //  h5
-//         button {
-          // border-radius: 50%;
-//           border: none;
-//           background-color: transparent;
-//           color: red;
-//           font-weight: bold;
-// &:hover {
-//   color: black;
-// }
-//         }
-//       } 
-//       }
-     
-//     }
-
-
-
-#shopping-cart {
-        position: absolute;
-        // display: block;
-        width: 30vw;
-        background-color: white;
-        font-size: 60%;
-        & * {
-          border: 1px solid black;
-        }
-thead{
-  
-  tr {
-  
-     th { column-span: 4;
-    text-align: center;
-  }
-  } 
-  }
-tbody {
-  text-align: center;
-  
-  .tr-product {
-    .td-image {
-      img {
-        width: 30%;
-                height: 30%;
+    #shopping-cart {
+      position: absolute;
+      display: block;
+      width: 33vw;
+      background-color: white;
+      z-index: 10; 
+      & > * {
+        // border: 1px solid green;
       }
+      ul {
+        // width: 95%;
+        // border: 1px solid red;
+        li {       
+      @include displayFlex(row);
+      justify-content: space-between;
+      border-bottom: 2px solid $headerLight;
       
+        // 
+        img {
+          width: 20%;
+          height: 20%;
+        }
+      //   div
+       p {
+         font-size: 75%;
+       }
+      .number-of-products {
+// display: inline-block;
+width: 30px;
+      }
+        button {
+          border-radius: 50%;
+          border: none;
+          background-color: transparent;
+          color: $headerLight;
+          font-weight: bold;
+&:hover {
+  color: black;
+}
+        }
+      } 
+      }
+     
     }
+
+
+
+// #shopping-cart {
+//         position: absolute;
+//         // display: block;
+//         width: 30vw;
+//         background-color: white;
+//         font-size: 60%;
+//         & * {
+//           border: 1px solid black;
+//         }
+// thead{
+  
+//   tr {
+  
+//      th { 
+//       //  column-span: 4;
+//     text-align: center;
+//   }
+//   } 
+//   }
+// tbody {
+//   text-align: center;
+  
+  // .tr-product {
+  //   .td-image {
+  //     img {
+  //       width: 30%;
+  //               height: 30%;
+  //     }
+      
+  //   }
 // .td-name {}
-.td-price {
-  text-align: right;
-}
-.td-x > button{
-  border-radius: 50%;
-            border: none;
-            background-color: transparent;
-            color: red;
-            font-weight: bold;
-  &:hover {
-    color: black;
-  }
-}
-  }
+// .td-number-of-items > * {
+// display: inline-block;
+
+// }
+// .td-price {
+//   text-align: right;
+// }
+// .td-x > button{
+//   border-radius: 50%;
+//             border: none;
+//             background-color: transparent;
+//             color: red;
+//             font-weight: bold;
+//   &:hover {
+//     color: black;
+//   }
+// }
+  // }
 }
 
 
@@ -135,8 +150,8 @@ tbody {
     
       }
     }
-} 
-}   
+// } 
+// }   
   #second-header {
     @include displayFlex(row);
     justify-content: space-evenly;
@@ -154,6 +169,7 @@ tbody {
       &:hover {
 .dropdown-content {
   display: block;
+  width: 70px;
 }
       }
 // box-sizing: border-box;  
@@ -209,4 +225,7 @@ p:hover {
   cursor: pointer;
    
 }
+}
+* > {
+  font-family: $fontPrimary;
 }
