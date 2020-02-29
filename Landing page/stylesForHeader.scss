@@ -36,23 +36,29 @@ $fontPrimary: Arial;
       position: absolute;
       top: -20px;
       left: -3px;
+      width: 12px;
+      height: 12px;
       color: white;
       padding: 3px;
      font-size: 60%;
       border-radius: 50%;
       background-color: red;
       visibility: hidden;
+      text-align: center;
       // border: 1px solid black;
+     
     }
     #shopping-cart {
       position: absolute;
-      display: block;
+      display: none;
+      // visibility: hidden;
       width: 33vw;
       background-color: white;
       z-index: 10; 
-      & > * {
-        // border: 1px solid green;
-      }
+      box-shadow: -5px 10px 18px black;
+      // & > * {
+      //   // border: 1px solid green;
+      // }
       ul {
         // width: 95%;
         // border: 1px solid red;
@@ -86,6 +92,11 @@ width: 30px;
         }
       } 
       }
+      // #cart-items:hover #shopping-cart {  
+            
+      //     display: block;
+        
+      // }
      
     }
 

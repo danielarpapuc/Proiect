@@ -712,24 +712,38 @@ userCards.addEventListener("click", addToCart);
 const cartItemsNumber = document.getElementById("cart-items");
 var cartItemsCounter = 0;
 const shoppingList = document.getElementById("shopping-list");
-function addToCart(e) {
+
+
+function transformNumber(num)  {
+    var numParts = num.toString().split(".");
+    numParts[0] = numParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return numParts.join(".");
+  }
+
+
+
+
+  function addToCart(e) {
   cartItemsCounter++;
+  // console.log("plus", cartItemsCounter);
   cartItemsNumber.style.visibility = "visible";
   cartItemsNumber.innerText = `${cartItemsCounter}`;
   var cardTarget = e.target.parentNode.parentNode;
   // console.log(cardTarget.id).
-  productsForCards.filter((obj) => {
+  productsForCards.find((obj) => {
     if (obj.id === cardTarget.id) {
-      console.log(obj)
-      var price = Number(obj.price.value);
+      // console.log(obj)
+      // var price = ;
+      var price = transformNumber(Number(obj.price.value));
       const listItem = document.createElement("li");
+      // listItem.setAttribute("id", `${obj.id}`)
       listItem.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small[0].alt}>
 <div class="product-name">
     <p>${obj.brand + " " + obj.productType}</p>
-    <p class="product-price">${obj.price.formatted}</p>    
+    <p class="product-price" value=${obj.price.value}>${'$' + price}</p>    
 </div>
-<input type="number" class="number-of-products" value="1">
-<p class="product-price-total">${price * 2}</p>
+<input type="number" class="number-of-products" value="1" min="1">
+<p class="product-price-total">${'$' + price}</p>
 <button class = "remove-from-cart" id = ${obj.id}>X</button>`;
       // listItem.setAttribute("id", `${obj.id}`); 
       shoppingList.appendChild(listItem);
@@ -739,12 +753,33 @@ function addToCart(e) {
 }
 
 shoppingList.addEventListener("click", removeFromCart);
+
+
 function removeFromCart(e) {
-  // console.log(cartItemsCounter);
-  if (e.target.hasAttribute("id")) {
-    cartItemsCounter--;
+  // console.log(cartItemsCounter);  
+  if (e.target.hasAttribute("id")) {    
     // e.target.parentNode.
-    // console.log(e.target.parentNode)
+    // console.log(e.target.parentNode);
+    e.target.parentNode.remove();
+    cartItemsCounter--;
+console.log(e.target.previousElementSibling.previousElementSibling.value);
+if (cartItemsCounter > 0) {
+  cartItemsNumber.innerText = `${cartItemsCounter}`;
+} else {
+  // cartItemsCounter = 0;
+  cartItemsNumber.style.visibility = "hidden";
+}
   }
 
+
 }
+
+shoppingList.addEventListener("input", multiplyPrice);
+function multiplyPrice (e) {
+  // console.log(e.target.value)
+  // console.log(document.getElementsByTagName("input").value)
+  console.log(Number(e.target.previousElementSibling.children[1].getAttribute("value")))
+  var priceMultiplied = transformNumber(Number(e.target.previousElementSibling.children[1].getAttribute("value")) * e.target.value);
+console.log(e.target.nextElementSibling)
+e.target.nextElementSibling.innerText = `${'$' + priceMultiplied}`
+  }
