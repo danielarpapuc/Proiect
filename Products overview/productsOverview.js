@@ -688,7 +688,7 @@ const productsForCards = [{
 let productsForDisplay = [];
 
 // console.log(productsForCards)
-var userCards = document.getElementById("user-cards")
+var userCards = document.getElementById("user-cards");
 function createUserCard(obj) {
   var userCard = document.createElement("div");
   userCard.className = "user-card";
@@ -725,18 +725,24 @@ function transformNumber(num)  {
 
   function addToCart(e) {
   cartItemsCounter++;
-  // console.log("plus", cartItemsCounter);
   cartItemsNumber.style.visibility = "visible";
   cartItemsNumber.innerText = `${cartItemsCounter}`;
   var cardTarget = e.target.parentNode.parentNode;
-  // console.log(cardTarget.id).
+  console.log(cardTarget.id);
+  var cartRows = document.getElementsByClassName("shopping-list-item")
+  console.log(cartRows[0])
+  // var cartRows = shoppingList.querySelectorAll(".shopping-list-item") 
+  // console.log(cartRows[0].getAttribute("id"))
+//   for (var i = 0; i <= cartRows.length; i++) {
+// if (cardTarget.id === cartRows[i].getAttribute("id")) {
+//   console.log(cartRows[i])
+// }
+//   }
   productsForCards.find((obj) => {
-    if (obj.id === cardTarget.id) {
-      // console.log(obj)
-      // var price = ;
+    if (obj.id === cardTarget.id) {      
       var price = transformNumber(Number(obj.price.value));
       const listItem = document.createElement("li");
-      // listItem.setAttribute("id", `${obj.id}`)
+      listItem.setAttribute("class", "shopping-list-item")
       listItem.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small[0].alt}>
 <div class="product-name">
     <p>${obj.brand + " " + obj.productType}</p>
@@ -745,9 +751,8 @@ function transformNumber(num)  {
 <input type="number" class="number-of-products" value="1" min="1">
 <p class="product-price-total">${'$' + price}</p>
 <button class = "remove-from-cart" id = ${obj.id}>X</button>`;
-      // listItem.setAttribute("id", `${obj.id}`); 
       shoppingList.appendChild(listItem);
-      // console.log(listItem)
+      updateCartTotal();
     }
   })
 }
@@ -762,7 +767,7 @@ function removeFromCart(e) {
     // console.log(e.target.parentNode);
     e.target.parentNode.remove();
     cartItemsCounter--;
-console.log(e.target.previousElementSibling.previousElementSibling.value);
+// console.log(e.target.previousElementSibling.previousElementSibling.value);
 if (cartItemsCounter > 0) {
   cartItemsNumber.innerText = `${cartItemsCounter}`;
 } else {
@@ -770,16 +775,30 @@ if (cartItemsCounter > 0) {
   cartItemsNumber.style.visibility = "hidden";
 }
   }
-
-
+  updateCartTotal()
 }
 
 shoppingList.addEventListener("input", multiplyPrice);
-function multiplyPrice (e) {
-  // console.log(e.target.value)
-  // console.log(document.getElementsByTagName("input").value)
-  console.log(Number(e.target.previousElementSibling.children[1].getAttribute("value")))
-  var priceMultiplied = transformNumber(Number(e.target.previousElementSibling.children[1].getAttribute("value")) * e.target.value);
-console.log(e.target.nextElementSibling)
+
+function multiplyPrice (e) {  
+  // console.log(Number(e.target.previousElementSibling.children[1].getAttribute("value")));
+  var price = Math.round(Number(e.target.previousElementSibling.children[1].getAttribute("value")) * e.target.value * 100) /100 
+  var priceMultiplied = transformNumber(price);
+// console.log(e.target.nextElementSibling)
 e.target.nextElementSibling.innerText = `${'$' + priceMultiplied}`
+updateCartTotal()
+  }
+
+  function updateCartTotal () {
+    var cartRows = document.getElementsByClassName("shopping-list-item")
+    var total = 0;
+    for(var i = 0; i <= cartRows.length; i++) {
+var price = Number(cartRows[i].getElementsByClassName("product-price")[0].getAttribute("value")) 
+var quantity = Number(cartRows[i].getElementsByClassName("number-of-products")[0].value) 
+total = total + (price * quantity);
+// console.log(price, quantity)
+    total = Math.round(total * 100) / 100;
+    var formattedTotal = transformNumber(total);
+document.getElementById("total-price").innerText = "Total: " + "$" + formattedTotal; } 
+   
   }

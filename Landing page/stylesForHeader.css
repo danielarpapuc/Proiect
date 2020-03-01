@@ -64,6 +64,10 @@
   font-size: 170%;
 }
 
+#first-header ul li a i:hover #shopping-cart {
+  display: block;
+}
+
 #first-header ul li a i #cart-items {
   position: absolute;
   top: -20px;

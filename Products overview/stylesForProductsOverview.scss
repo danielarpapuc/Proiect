@@ -15,15 +15,18 @@ align-content: space-between;
    background-image: url("https://i.pinimg.com/originals/21/ff/f6/21fff602082a8c1e5b16fa3cac039d74.jpg");
 //    background-repeat: repeat;
   padding: 10px;
-#filter {    
+#filter {  
+    border: 2px solid black;  
     #filter-card {
-        width: 250px;
-    height: 450px;
- background-color: transparent;
+        width: 200px;
+    // margin-top: 10px;
+    background-color: white;
+    box-shadow: $shadow;
+//  background-color: transparent;
 //    background-color: #fefbd8;
 //    background-color: #f0f0f0;
    padding: 5px 15px;
-    border-radius: 10px;
+    // border-radius: 10px;
     }
 // p {}
 
@@ -32,8 +35,19 @@ align-content: space-between;
 // width: 1000px;
 // height: 1000px;
 padding: 5px 15px;
+border: 2px solid black;
+// margin-top: 0px;
 // p {}
-#change-filter{
+#browsing {
+    background-color: white;
+    width: 80%;
+    // position: relative;
+    // margin: auto
+    // color: white;
+    box-shadow: $shadow;
+    padding: 20px;
+    margin-bottom: 20px;
+  #change-filter{
     @include displayFlex(row);
     justify-content: flex-start;
     .fields {
@@ -50,7 +64,9 @@ padding: 5px 15px;
             //  option {}
          }
     }   
+}  
 }
+
 #user-cards {
     padding: 10px 0px;
     @include displayFlex(row);
