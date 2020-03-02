@@ -251,7 +251,7 @@ const productsForCards = [{
 {
   id: 'FC-806703911748',
   productName: 'CZ-USA CZ75 TS Czechmate 9mm Luger Semi-Auto Competition Handgun 5.27" Barrel 26 Rounds C-More Red Dot Sight Steel Frame Black Finish',
-  productType: 'master',
+  productType: 'Handgun',
   brand: 'CZ-USA',
   category: "FIREARMS",
   price: {
@@ -426,7 +426,7 @@ const productsForCards = [{
 {
   id: 'FC-741566104534',
   productName: 'EAA Witness Elite Gold Team Semi-auto Pistol 9mm 5.25" Barrel 17 Rounds, Compensater, No Sights, Drilled and Tapped, Single Action, Chrome',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'EAA',
   category: "FIREARMS",
   price: {
@@ -484,7 +484,7 @@ const productsForCards = [{
 {
   id: 'FC-761226088394',
   productName: 'Magnum Research Desert Eagle Mark XIX Semi Auto Pistol .50 Action Express 6" Barrel 7 Rounds Fixed Combat Sights Weaver Accessory Rail Color Case Hardened Finish',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'Magnum Research',
   category: "FIREARMS",
   price: {
@@ -571,7 +571,7 @@ const productsForCards = [{
 {
   id: 'FC-680017478001',
   productName: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth',
-  productType: 'master',
+  productType: 'Rifle',
   brand: 'Maxim Defense',
   category: "FIREARMS",
   price: {
@@ -600,7 +600,7 @@ const productsForCards = [{
 {
   id: 'FC-728028235456',
   productName: 'Metro Arms SPS Vista Long Semi Auto Handgun .38 Super 5.5" Barrel 21 Rounds 4140 Steel Frame Black Chrome Finish with Scope Mount Polymer Grips Black SPVL38SBC',
-  productType: 'master',
+  productType: 'Handgun',
   brand: 'Metro Arms Corp',
   category: "FIREARMS",
   price: {
@@ -629,7 +629,7 @@ const productsForCards = [{
 {
   id: 'FC-806703018867',
   productName: 'Dan Wesson 1911 Discretion Government Semi Auto Pistol 9mm Luger 5.75" Threaded Barrel 10 Rounds Suppressor Height Night Sights G-10 Grips Stainless Steel Frame Black Duty Finish',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'Dan Wesson',
   category: "FIREARMS",
   price: {
@@ -658,7 +658,7 @@ const productsForCards = [{
 {
   id: 'FC-811607032352',
   productName: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish',
-  productType: 'master',
+  productType: 'Rifle',
   brand: 'KRISS USA',
   category: "FIREARMS",
   price: {
@@ -685,7 +685,7 @@ const productsForCards = [{
   }
 }
 ];
-let productsForDisplay = [];
+// let productsForDisplay = [];
 
 // console.log(productsForCards)
 var userCards = document.getElementById("user-cards");
@@ -702,12 +702,12 @@ function createUserCard(obj) {
     <button class="add-to-cart">ADD TO CART</button>
 </div>`
 }
-for (product of productsForCards) {
-  createUserCard(product);
-}
-// for (var i = 1; i <= 17; i ++) {
-//     createUserCard();
+// for (product of productsForCards) {
+//   createUserCard(product);
 // }
+for (var i = 1; i <= 6; i ++) {
+    createUserCard(productsForCards[i]);
+}
 userCards.addEventListener("click", addToCart);
 const cartItemsNumber = document.getElementById("cart-items");
 var cartItemsCounter = 0;
@@ -728,9 +728,9 @@ function transformNumber(num)  {
   cartItemsNumber.style.visibility = "visible";
   cartItemsNumber.innerText = `${cartItemsCounter}`;
   var cardTarget = e.target.parentNode.parentNode;
-  console.log(cardTarget.id);
-  var cartRows = document.getElementsByClassName("shopping-list-item")
-  console.log(cartRows[0])
+  // console.log(cardTarget.id);
+  // var cartRows = document.getElementsByClassName("shopping-list-item")
+  // console.log(cartRows[0])
   // var cartRows = shoppingList.querySelectorAll(".shopping-list-item") 
   // console.log(cartRows[0].getAttribute("id"))
 //   for (var i = 0; i <= cartRows.length; i++) {
@@ -768,14 +768,16 @@ function removeFromCart(e) {
     e.target.parentNode.remove();
     cartItemsCounter--;
 // console.log(e.target.previousElementSibling.previousElementSibling.value);
+
 if (cartItemsCounter > 0) {
   cartItemsNumber.innerText = `${cartItemsCounter}`;
 } else {
   // cartItemsCounter = 0;
   cartItemsNumber.style.visibility = "hidden";
 }
+updateCartTotal();
   }
-  updateCartTotal()
+  
 }
 
 shoppingList.addEventListener("input", multiplyPrice);
@@ -793,12 +795,76 @@ updateCartTotal()
     var cartRows = document.getElementsByClassName("shopping-list-item")
     var total = 0;
     for(var i = 0; i <= cartRows.length; i++) {
-var price = Number(cartRows[i].getElementsByClassName("product-price")[0].getAttribute("value")) 
+      if(cartRows.length===0){
+        total=0;
+        document.getElementById("total-price").innerText = "Total: " + "$" + 0;
+      } else {
+        var price = Number(cartRows[i].getElementsByClassName("product-price")[0].getAttribute("value")) 
 var quantity = Number(cartRows[i].getElementsByClassName("number-of-products")[0].value) 
 total = total + (price * quantity);
 // console.log(price, quantity)
     total = Math.round(total * 100) / 100;
     var formattedTotal = transformNumber(total);
 document.getElementById("total-price").innerText = "Total: " + "$" + formattedTotal; } 
+      }
+
    
   }
+
+var indexPage = 0;
+var noOfProds = 0;
+var splitProducts = chunkArray(productsForCards, noOfProds);
+  document.getElementById("results-per-page").addEventListener("change", test)
+  
+  function resultsPerPage () { 
+// console.log(splitProducts.length, splitProducts)
+// console.log(typeof noOfProds)
+var noOfProds = Number(document.getElementById("results-per-page").value);
+userCards.innerHTML = "";
+ for (var i=0; i<noOfProds; i++) {
+  createUserCard(splitProducts[indexPage][i]);
+}
+console.log(indexPage, "din no")
+// console.log("jdsksdfjds")
+
+  }
+
+  function test (){
+    indexPage = 0;
+    resultsPerPage()
+  }
+  
+  function chunkArray(myArray, chunkSize){
+    var index = 0;
+    var arrayLength = myArray.length;
+    var tempArray = [];    
+    for (index = 0; index < arrayLength; index += chunkSize) {
+        myChunk = myArray.slice(index, index+chunkSize);
+        // Do something if you want with the group
+        tempArray.push(myChunk);
+    }
+
+     return tempArray;
+}
+
+
+document.getElementById("previous-products").addEventListener("click", seePreviousProducts)
+function seePreviousProducts () {
+  if (indexPage > 0){
+      indexPage -=1;
+  console.log(indexPage, "din prev")
+  resultsPerPage()
+  }
+
+}
+
+document.getElementById("next-products").addEventListener("click", seeNextProducts)
+function seeNextProducts () {  
+  if (indexPage < splitProducts.length-1) {
+    indexPage +=1; 
+  console.log(indexPage, "din next")
+resultsPerPage()
+  }
+  
+ 
+}
