@@ -92,6 +92,7 @@ width: 30px;
           font-weight: bold;
 &:hover {
   color: black;
+  cursor: pointer;
 }
         }
       } 
@@ -182,6 +183,7 @@ width: 30px;
     .dropdown-menu {
       text-decoration: none;  
       &:hover {
+        cursor: pointer;
 .dropdown-content {
   display: block;
   width: 70px;
@@ -195,6 +197,7 @@ width: 30px;
     border: 3px solid transparent;
     &:hover, &:focus {
       border: 3px solid $headerDark;
+      cursor: pointer;
     }
   }
   .dropdown-content {
@@ -211,7 +214,7 @@ z-index: 10;
   width: 200%;
   &:hover {
     background-color: black;
-    
+    cursor: pointer;
   }
 }
 }

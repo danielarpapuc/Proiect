@@ -75,6 +75,7 @@ i {
 }
 &:hover {
     background-color: $transparentLight;
+    cursor: pointer;
     i {
         color: white;
     }
@@ -90,7 +91,21 @@ i {
 
     }
     #product-cards {
-        height: 100%;
+        .user-card {
+              height: 100%;
+        border: 2px solid transparent;
+        width: 20vw;
+        .product-short-title {
+            width: 70%;
+            &:hover {
+            // border: 2px solid $headerDark;
+            text-decoration: underline;
+cursor: pointer;
+        }
+        }
+        
+        }
+      
     }
 }
 // #small-hero {
@@ -112,9 +127,12 @@ i {
             height: 250px;
             @include displayFlex(column);
             border: 2px solid transparent;
+            .product-short-title {
+                width: 70%;
+            }
             &:hover {
                 border: 2px solid $headerDark;
-
+cursor: pointer;
             }
         }
     }

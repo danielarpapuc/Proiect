@@ -57,7 +57,7 @@
 
 #overview-content #browse #browsing {
   background-color: white;
-  width: 85%;
+  width: 65vw;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -129,6 +129,7 @@
 
 #overview-content #browse #browsing #change-filter .fields-btn:hover {
   border: 1px solid #243444;
+  cursor: pointer;
 }
 
 #overview-content #browse #user-cards {
@@ -157,7 +158,7 @@
 
 #overview-content #browse #user-cards .user-card {
   position: relative;
-  width: 25%;
+  width: 260px;
   height: 320px;
   background-color: white;
   border: 2px solid #ececec;
@@ -225,6 +226,7 @@
 
 #overview-content #browse #user-cards .user-card .card-overlay .details:hover {
   border-color: #2d9c3a;
+  cursor: pointer;
 }
 
 #overview-content #browse #user-cards .user-card .card-overlay .add-to-cart {
@@ -240,6 +242,7 @@
 #overview-content #browse #user-cards .user-card .card-overlay .add-to-cart:hover {
   background-color: #2d9c3a;
   border-color: #2d9c3a;
+  cursor: pointer;
 }
 
 #overview-content #browse #user-cards .user-card:hover .card-overlay {
@@ -364,5 +367,6 @@
 #product-container #product-page .product-name-card #card button:hover {
   background-color: #2d9c3a;
   border-color: #2d9c3a;
+  cursor: pointer;
 }
 /*# sourceMappingURL=stylesForProductsOverview.css.map */

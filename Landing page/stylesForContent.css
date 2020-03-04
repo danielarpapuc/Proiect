@@ -154,6 +154,7 @@
 
 #landing-content #carousel .carousel-arrows button:hover {
   background-color: #0000001a;
+  cursor: pointer;
 }
 
 #landing-content #carousel .carousel-arrows button:hover i {
@@ -170,8 +171,19 @@
   border-bottom-left-radius: 20px;
 }
 
-#landing-content #carousel #product-cards {
+#landing-content #carousel #product-cards .user-card {
   height: 100%;
+  border: 2px solid transparent;
+  width: 20vw;
+}
+
+#landing-content #carousel #product-cards .user-card .product-short-title {
+  width: 70%;
+}
+
+#landing-content #carousel #product-cards .user-card .product-short-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #landing-content #semi-display {
@@ -238,7 +250,12 @@
   border: 2px solid transparent;
 }
 
+#landing-content #semi-display #products-grid .user-card .product-short-title {
+  width: 70%;
+}
+
 #landing-content #semi-display #products-grid .user-card:hover {
   border: 2px solid #243444;
+  cursor: pointer;
 }
 /*# sourceMappingURL=StylesForContent.css.map */

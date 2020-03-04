@@ -138,6 +138,7 @@
 
 #first-header ul li a i #shopping-cart ul li button:hover {
   color: black;
+  cursor: pointer;
 }
 
 #second-header {
@@ -171,6 +172,10 @@
   text-decoration: none;
 }
 
+#second-header .dropdown-menu:hover {
+  cursor: pointer;
+}
+
 #second-header .dropdown-menu:hover .dropdown-content {
   display: block;
   width: 70px;
@@ -186,6 +191,7 @@
 
 #second-header .dropdown-menu .dropdown-button:hover, #second-header .dropdown-menu .dropdown-button:focus {
   border: 3px solid #243444;
+  cursor: pointer;
 }
 
 #second-header .dropdown-menu .dropdown-content {
@@ -206,6 +212,7 @@
 
 #second-header .dropdown-menu .dropdown-content a:hover {
   background-color: black;
+  cursor: pointer;
 }
 
 #website-logo #logo {
