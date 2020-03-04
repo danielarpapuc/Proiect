@@ -191,6 +191,7 @@
 #second-header .dropdown-menu .dropdown-content {
   display: none;
   position: absolute;
+  z-index: 10;
 }
 
 #second-header .dropdown-menu .dropdown-content a {

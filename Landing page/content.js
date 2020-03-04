@@ -1,7 +1,7 @@
 const productsForCards = [{
-    id: 'GUN-916558',
+  id: 'GUN-916558',
   productName: 'Springfield Armory SAINT Victor 5.56 AR-15 Semi Auto Rifle 7.5" Barrel 30 Rounds with a SB Tactical Rifle Brace Black',
-  productType: 'variant',
+  productType: 'Rifle',
   brand: 'Springfield',
   category: "FIREARMS",
   price: {
@@ -50,8 +50,9 @@ const productsForCards = [{
 {
   id: 'GUN-8570',
   productName: 'Ruger AR-556 NATO Semi Auto AR-15 Rifle with SBA3 Brace 10.5" Barrel 30 Rounds M-LOK Handguard Black',
-  productType: 'variant',
+  productType: 'Rifle',
   brand: 'Ruger',
+  category: "FIREARMS",
   price: {
     value: 659,
     currency: 'USD',
@@ -118,8 +119,9 @@ const productsForCards = [{
 {
   id: '2-EA610066',
   productName: 'EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25" Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating',
-  productType: 'variant',
+  productType: 'Pistol',
   brand: 'EAA',
+  category: "FIREARMS",
   price: {
     value: 5088.2,
     currency: 'USD',
@@ -146,8 +148,9 @@ const productsForCards = [{
 {
   id: '103911',
   productName: 'Ed Brown Special Forces SRC Semi Auto Pistol .45 ACP 4.25" Threaded Barrel 7 Rounds Trijicon RMR Matte Black Finish',
-  productType: 'variant',
+  productType: 'Pistol',
   brand: 'Ed Brown Products Inc',
+  category: "FIREARMS",
   price: {
     value: 4369.24,
     currency: 'USD',
@@ -174,8 +177,9 @@ const productsForCards = [{
 {
   id: '103906',
   productName: 'Ed Brown CCO LW 9mm Luger Semi Auto Pistol 4.25" Barrel 8 Rounds Officer Frame Commander Slide FO Front Sight Synthetic Grips Matte Black Finish',
-  productType: 'variant',
+  productType: 'Pistol',
   brand: 'Ed Brown Products Inc',
+  category: "FIREARMS",
   price: {
     value: 3391.16,
     currency: 'USD',
@@ -202,8 +206,9 @@ const productsForCards = [{
 {
   id: '111853',
   productName: 'Wilson Combat Tactical Carry Commander 1911 Semi Automatic Handgun 9mm Luger 4" Barrel 10 Rounds Starburst G10 Grips Armor Tuff Black Finish',
-  productType: 'variant',
+  productType: 'Handgun',
   brand: 'Wilson Combat',
+  category: "FIREARMS",
   price: {
     value: 3067.31,
     currency: 'USD',
@@ -240,8 +245,9 @@ const productsForCards = [{
 {
   id: 'FC-806703911748',
   productName: 'CZ-USA CZ75 TS Czechmate 9mm Luger Semi-Auto Competition Handgun 5.27" Barrel 26 Rounds C-More Red Dot Sight Steel Frame Black Finish',
-  productType: 'master',
+  productType: 'Handgun',
   brand: 'CZ-USA',
+  category: "FIREARMS",
   price: {
     value: 2981.74,
     currency: 'USD',
@@ -278,8 +284,9 @@ const productsForCards = [{
 {
   id: '2-BANDT-36077',
   productName: 'B&T APC308 Semi Auto Rifle .308 Winchester 14.3" Barrel 20 Rounds Full Length Optic Rail Ambidextrous Controls Backup Sights Matte Black',
-  productType: 'variant',
+  productType: 'Rifle',
   brand: 'B&T AG',
+  category: "FIREARMS",
   price: {
     value: 2910.39,
     currency: 'USD',
@@ -306,8 +313,9 @@ const productsForCards = [{
 {
   id: '111851',
   productName: 'Wilson Combat CQB Elite Full Size 1911 Semi Automatic Handgun .45 ACP 5" Barrel 8 Rounds Diagonal G10 Grips Natural Stainless Steel Finish',
-  productType: 'variant',
+  productType: 'Handgun',
   brand: 'Wilson Combat',
+  category: "FIREARMS",
   price: {
     value: 2809.36,
     currency: 'USD',
@@ -344,8 +352,9 @@ const productsForCards = [{
 {
   id: '2-POF01600',
   productName: 'POF USA Revolution DI .308 Winchester Semi Auto Rifle 12.5" Barrel 20 Rounds Direct Gas Impingement System 11.5" M-LOK Free Float Rail Burnt Bronze Finish',
-  productType: 'variant',
+  productType: 'Rifle',
   brand: 'Patriot Ordnance Factory',
+  category: "FIREARMS",
   price: {
     value: 2530.54,
     currency: 'USD',
@@ -372,8 +381,9 @@ const productsForCards = [{
 {
   id: '2-BANDT-430003',
   productName: 'B&T USW A1 Semi Auto Pistol 9mm Luger 4.8" Barrel 17 Rounds Aimpoint Nano B&T 200 Lumen APL Tactical Pistol Light Ambidextrous Controls Grip Panel Inserts Matte Black',
-  productType: 'variant',
+  productType: 'Pistol',
   brand: 'B&T AG',
+  category: "FIREARMS",
   price: {
     value: 2207.41,
     currency: 'USD',
@@ -410,8 +420,9 @@ const productsForCards = [{
 {
   id: 'FC-741566104534',
   productName: 'EAA Witness Elite Gold Team Semi-auto Pistol 9mm 5.25" Barrel 17 Rounds, Compensater, No Sights, Drilled and Tapped, Single Action, Chrome',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'EAA',
+  category: "FIREARMS",
   price: {
     value: 2155,
     currency: 'USD',
@@ -438,8 +449,9 @@ const productsForCards = [{
 {
   id: '7-GSAR4N1',
   productName: 'Standard Manufacturing .45 Long Colt Single Action Revolver 4.75" Barrel 6 Rounds Fixed Sights One Piece Grip Nickel Finish',
-  productType: 'variant',
+  productType: 'Revolver',
   brand: 'Standard Manufacturing',
+  category: "FIREARMS",
   price: {
     value: 2024.6,
     currency: 'USD',
@@ -466,8 +478,9 @@ const productsForCards = [{
 {
   id: 'FC-761226088394',
   productName: 'Magnum Research Desert Eagle Mark XIX Semi Auto Pistol .50 Action Express 6" Barrel 7 Rounds Fixed Combat Sights Weaver Accessory Rail Color Case Hardened Finish',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'Magnum Research',
+  category: "FIREARMS",
   price: {
     value: 1958.88,
     currency: 'USD',
@@ -494,8 +507,9 @@ const productsForCards = [{
 {
   id: '2-SPKSTP5610-M1R',
   productName: 'Spikes Rare Breed Spartan AR-15 5.56 NATO Semi Auto Rifle 11.5" Barrel Milled Spartan Helmet Lower 12" M-LOK Hand Guard SBA3 Brace Bronze Battle Worn Finish',
-  productType: 'variant',
+  productType: 'Rifle',
   brand: 'Spikes Tactical',
+  category: "FIREARMS",
   price: {
     value: 1957.5,
     currency: 'USD',
@@ -522,8 +536,9 @@ const productsForCards = [{
 {
   id: '7-GSAR7CC1',
   productName: 'Standard Manufacturing .45 Long Colt Single Action Revolver 7.5" Barrel 6 Rounds Fixed Sights One Piece Grip Color Case Hardened Frame Blued Finish',
-  productType: 'variant',
+  productType: 'Revolver',
   brand: 'Standard Manufacturing',
+  category: "FIREARMS",
   price: {
     value: 1934.5,
     currency: 'USD',
@@ -550,8 +565,9 @@ const productsForCards = [{
 {
   id: 'FC-680017478001',
   productName: 'Maxim Defense PDX 7.62x39 Semi Auto Rifle 5.5" Barrel 20 Rounds M-LOK Free Float Forend Maxim Defense SCW PDW Rifle Stabilizing Brace Arid Flat Dark Earth',
-  productType: 'master',
+  productType: 'Rifle',
   brand: 'Maxim Defense',
+  category: "FIREARMS",
   price: {
     value: 1895.69,
     currency: 'USD',
@@ -578,8 +594,9 @@ const productsForCards = [{
 {
   id: 'FC-728028235456',
   productName: 'Metro Arms SPS Vista Long Semi Auto Handgun .38 Super 5.5" Barrel 21 Rounds 4140 Steel Frame Black Chrome Finish with Scope Mount Polymer Grips Black SPVL38SBC',
-  productType: 'master',
+  productType: 'Handgun',
   brand: 'Metro Arms Corp',
+  category: "FIREARMS",
   price: {
     value: 1990.99,
     currency: 'USD',
@@ -606,8 +623,9 @@ const productsForCards = [{
 {
   id: 'FC-806703018867',
   productName: 'Dan Wesson 1911 Discretion Government Semi Auto Pistol 9mm Luger 5.75" Threaded Barrel 10 Rounds Suppressor Height Night Sights G-10 Grips Stainless Steel Frame Black Duty Finish',
-  productType: 'master',
+  productType: 'Pistol',
   brand: 'Dan Wesson',
+  category: "FIREARMS",
   price: {
     value: 1843.67,
     currency: 'USD',
@@ -634,8 +652,9 @@ const productsForCards = [{
 {
   id: 'FC-811607032352',
   productName: 'Kriss USA Kriss Vector Gen II SDP-SB Enhanced 10mm Auto Semi Auto Rifle 6.5" Barrel 15 Rounds Rifle Stabilizing Brace Alpine White Finish',
-  productType: 'master',
+  productType: 'Rifle',
   brand: 'KRISS USA',
+  category: "FIREARMS",
   price: {
     value: 1799,
     currency: 'USD',
@@ -670,37 +689,91 @@ secondHeader.addEventListener("click", (e) => {
   // console.log(e.currentTarget)
   }  
   // e.stopPropagation();
-
   });
 
-var userCardsCarousel = document.getElementById("product-cards")
+
+
 function createUserCard (obj, containerForCards) {
     var userCard = document.createElement("div");
 userCard.className = "user-card";
 containerForCards.appendChild(userCard);
 userCard.innerHTML = `<img src=${obj.images.small[0].url} alt=${obj.images.small[0].alt}>
-<p>${obj.brand}</p>`
+<p>${obj.brand} ${obj.productType}</p>`
 }
-for (product of productsForCards) {
-createUserCard(product, userCardsCarousel);
-// userCardsCarousel.firstElementChild.style.display = "flex";
-}
+
 const userCardsGrid = document.getElementById("products-grid");
-for (var i = 4; i<=11; i++){
+for (var i = 4; i<=9; i++){
     createUserCard(productsForCards[i], userCardsGrid);
 }
 
-// for (var i=0; i<3; i++) {
-//     createUserCard(productsForCards[i]);
+searchWord = document.getElementById("hero-search")
+searchButton = document.getElementById("hero-button")
+searchButton.addEventListener("click", searchProducts)
+function searchProducts(){
+  userCardsGrid.innerText = "";
+  for(product of productsForCards) {
+    if(product.productName.includes(searchWord.value)  ||  product.productName.toLowerCase().includes(searchWord.value)){
+      createUserCard(product, userCardsGrid)
+      
+      // console.log(product.productName.toLowerCase())
+    }
+  }
+   searchWord.value = "";
+}
+
+searchWord.addEventListener("keyup", searchProductsEnter);
+function searchProductsEnter(e){
+  if (e.keyCode === 13){
+    searchProducts();
+  }
+}
+
+
+var userCardsCarousel = document.getElementById("product-cards")
+for (product of productsForCards) {
+  createUserCard(product, userCardsCarousel);
+  // userCardsCarousel.firstElementChild.style.display = "flex";
+  }
+// document.getElementById("carousel").addEventListener("click", swipeCarousel);
+// const arrowLeft = document.getElementById("arrow-left");
+// const arrowRight = document.getElementById("arrow-right");
+// function swipeCarousel () {
+// if (event.target === arrowRight) {
+// i += 1;
+// userCards.innerHTML = "";
+// createUserCard(productsForCards[i]);
+// }
 // }
 
-document.getElementById("carousel").addEventListener("click", swipeCarousel);
-const arrowLeft = document.getElementById("arrow-left");
-const arrowRight = document.getElementById("arrow-right");
-function swipeCarousel () {
-if (event.target === arrowRight) {
-i += 1;
-userCards.innerHTML = "";
-createUserCard(productsForCards[i]);
+// const arrowLeft = document.getElementById("arrow-left")
+// const arrowRight = document.getElementById("arrow-right")
+
+// arrowLeft.addEventListener("click", plusSlides(-1));
+// arrowRight.addEventListener()
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementById("product-cards").children;
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex].style.display = "block";  
+  slides[slideIndex+1].style.display = "block";  
+  
 }

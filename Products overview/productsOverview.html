@@ -129,11 +129,10 @@
                     <div id="sort-by-field" class="fields">
                         <label for="sort-by">Sort by</label>
                         <select name="sort" id="sort-by">
+                            <option value="">Select</option>
                             <option value="PLH">Price: Ascending</option>
                             <option value="PHL">Price: Descending</option>
-                            <option value="B">Brand: A-Z</option>
-                            <option value="B">Brand: Z-A</option>
-                        </select>
+                            </select>
                     </div>
                     <div id="results-field" class="fields">
                         <label for="results-per-page">Results per page</label>
@@ -143,8 +142,8 @@
                             <option value="120">120</option>
                         </select>
                     </div>
-                    <button class="fields" id="previous-products">prev</button>
-                    <button class="fields" id="next-products">next</button>
+                    <button class="fields-btn" id="previous-products">Previous page</button>
+                    <button class="fields-btn" id="next-products">Next page</button>
                     <!-- <div>
           <div id="sort-by-field1">
             <label for="sort-by1">Sort by</label>
@@ -199,7 +198,29 @@
             </div>
         </div>
     </footer>
+    <div id="product-container">
+        <div id="product-page">
+            <div id="product-details">
+                <div id="product-images">
+                    <div id="large-image">                        
+                    </div>
+                     
+                <div id="small-images">                   
+                </div>
+                </div>
+               <div id="product-description">                  
+                </div>
+            </div>
+            <div class="product-name-card">
+                <div id="card">
+                    <h5 id="product-name"></h5>
+                    <h2 id="product-price"></h2>
+                    <button id="add-to-cart">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- </div> -->
     <script src="/Products overview/productsOverview.js"></script>
 </body>
 

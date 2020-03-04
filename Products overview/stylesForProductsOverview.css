@@ -115,6 +115,22 @@
   border-radius: 5px;
 }
 
+#overview-content #browse #browsing #change-filter .fields-btn {
+  background-color: white;
+  border: 1px solid #acbbcb;
+  margin-right: 15px;
+  padding: 10px;
+  position: relative;
+  top: 7px;
+  border-radius: 5px;
+  width: 150px;
+  z-index: 0;
+}
+
+#overview-content #browse #browsing #change-filter .fields-btn:hover {
+  border: 1px solid #243444;
+}
+
 #overview-content #browse #user-cards {
   padding: 10px 0px;
   display: -webkit-box;
@@ -230,5 +246,123 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#product-container {
+  background-color: #00000080;
+  position: absolute;
+  top: 1px;
+  height: 3000px;
+  width: 98vw;
+  display: none;
+}
+
+#product-container #product-page {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#product-container #product-page #product-details {
+  width: 60vw;
+}
+
+#product-container #product-page #product-details #product-images #small-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
+
+#product-container #product-page #product-details #product-images #small-images .small-images {
+  padding: 0px 5px;
+}
+
+#product-container #product-page #product-details #product-description {
+  padding: 15px;
+}
+
+#product-container #product-page .product-name-card #card {
+  width: 250px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: -5px 10px 18px black;
+          box-shadow: -5px 10px 18px black;
+  margin-top: 100px;
+}
+
+#product-container #product-page .product-name-card #card h5 {
+  padding: 0px 20px;
+}
+
+#product-container #product-page .product-name-card #card h2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 30px;
+}
+
+#product-container #product-page .product-name-card #card button {
+  display: block;
+  background-color: #243444;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  font-size: 12px;
+  border: 2px solid #243444;
+  width: 95%;
+}
+
+#product-container #product-page .product-name-card #card button:hover {
+  background-color: #2d9c3a;
+  border-color: #2d9c3a;
 }
 /*# sourceMappingURL=stylesForProductsOverview.css.map */

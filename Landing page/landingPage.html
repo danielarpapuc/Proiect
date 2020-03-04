@@ -73,30 +73,31 @@
             <div class="overlay flex">
                 <div class="hero-content flex">
                     <h3>Your ultimate marketplace for target shooting and hunting gear</h3>
-                    <p>Start your search now</p>
+                    <p>Search through dozens of new arrivals</p>
                     <div id="search-section" class="flex">
                         <input type="text" id="hero-search">
-                        <button type="button" id="tessst" class="hero-button">SEARCH</button>
+                        <button type="button" id="hero-button" class="hero-button">SEARCH</button>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div id="semi-display">
+                <p>NEW ARRIVALS</p>
+                <div id="products-grid"></div>
+        </div>
         <div id="carousel" class="flex">
             <div class="carousel-arrows flex">
-                <button id="arrow-left"><i class="fas fa-angle-left"></i></button>
+                <button id="arrow-left" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
             </div>
-            <div id="product-cards" class="product-cards"></div>
+            <div id="product-cards"></div>
             <div class="carousel-arrows flex">
-                <button id="arrow-right"><i class="fas fa-angle-right"></i></button>
+                <button id="arrow-right" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
             </div>
 
         </div>
         <!-- <div id="small-hero"></div> -->
-        <div id="semi-display">
-                <p>NEW ARRIVALS</p>
-                <p>some other message</p>
-                <div id="products-grid"></div>
-        </div>
+        
      <footer id="footer">
         <div id="first-footer" class="flex">
             <p>Start your 30-day free trial today</p>
@@ -129,9 +130,6 @@
     </footer>
 </div>
    
-   
-</div>
-
     <!-- <div id="testing"></div> -->
     <script src="header.js"></script>
     <script src="content.js"></script>

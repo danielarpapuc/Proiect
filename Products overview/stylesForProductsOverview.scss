@@ -67,7 +67,21 @@ border: 2px solid black;
              border-radius: 5px;
             //  option {}
          }
-    }   
+    }  
+    .fields-btn {
+        background-color: white;
+        border: 1px solid $headerLight;
+        margin-right: 15px;
+padding: 10px;
+position: relative;
+top: 7px;
+border-radius: 5px;
+width: 150px;
+z-index: 0;
+&:hover {
+    border: 1px solid $headerDark;
+}
+    } 
 }  
 }
 
@@ -124,4 +138,82 @@ display: flex;            }
 }
 }
 
+}
+
+#product-container {
+    background-color: $transparentOverlay;
+    position: absolute;
+    top: 1px;
+   height: 3000px;
+    width: 98vw;
+    // left: 50%;
+    display: none;
+    #product-page {
+        // * {
+        //     border: 1px solid red
+        // }
+        width: 80vw;
+        // left: 0; 
+        // right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        background-color: white;
+    @include displayFlex(row);
+    justify-content: flex-start;
+    align-items: flex-start;
+    #product-details {
+        width: 60vw;
+        #product-images {
+            // @include displayFlex(column);
+            // #large-image {
+                // border: 1px solid red;
+                // max-width: 70vw;
+                // max-height: 70vh;
+            // }
+            #small-images {
+                @include displayFlex(row);
+                // border: 1px solid $headerDark;
+                width: 100%;
+                // margin-bottom: 15px;
+                // justify-content: center;
+                .small-images {
+                    padding: 0px 5px;
+                }
+            }
+        }
+        #product-description {
+            padding: 15px;
+        }
+    }
+    .product-name-card {
+        #card {
+            width: 250px;
+            height: 280px;
+       
+        // border: 1px solid green; 
+        @include displayFlex(column);
+        box-shadow: $shadow;
+        margin-top: 100px;
+        // & * {
+        //     border: 1px solid red;
+        // }
+                h5 {
+            // color: $signUpDarkSlate;
+            padding: 0px 20px;
+        }
+        h2 {
+            // position: relative;
+            // right: 0px;
+            align-self: flex-end;
+            margin-right: 30px;
+        }
+        button {
+            display: block;
+            @include greenButton;
+            width: 95%;
+        }
+        }
+       
+    }
+}
 }

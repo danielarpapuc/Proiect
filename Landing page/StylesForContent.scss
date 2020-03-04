@@ -41,23 +41,25 @@ justify-content: space-between;                input {
     }
 }
 #carousel {
-    & > * {
-        border: 1px solid red;
-    }
+    // & > * {
+    //     border: 1px solid red;
+    // }
+    overflow: hidden;
     height: 50vh;
     background-color: white;
 display: grid;
 grid-template-areas: 
 "carousel-arrows product-cards carousel-areas";
 grid-template-columns: 150px auto 150px;
-.product-cards {
+#product-cards {
     @include displayFlex(row);
     justify-content: space-evenly;
-    .user-card {
-        @include displayFlex(column);
-        border: 1px solid green;
-        // display: none;
-    }
+    // border: 1px solid green;
+    // .user-card {
+    //     @include displayFlex(column);
+    //     
+    //     // display: none;
+    // }
 }   
 .carousel-arrows {
         // height: 95%;
@@ -98,14 +100,16 @@ i {
 #semi-display {
     @include displayFlex(column);
     // height: 80vh;
-    background-color: $signUpLavender;
+    background-color: $yellowForButton;
     #products-grid {
         @include displayFlex(row);
         justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 60%;
+        width: 75%;
         .user-card {
-            padding: 0px 20px;
+            // padding: 0px 20px;
+            width: 250px;
+            height: 250px;
             @include displayFlex(column);
             border: 2px solid transparent;
             &:hover {
