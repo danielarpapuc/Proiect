@@ -18,7 +18,13 @@ align-content: space-between;
 #filter {  
     border: 2px solid black;  
     #filter-card {
-        width: 200px;
+        div {
+             .price-range, input {
+            display: inline;
+        } 
+        }
+      
+        width: 250px;
     // margin-top: 10px;
     background-color: white;
     box-shadow: $shadow;
@@ -87,16 +93,18 @@ z-index: 0;
 }
 
 #user-cards {
+    // border: 3px solid blue;
     padding: 10px 0px;
     @include displayFlex(row);
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
     .user-card {
         position: relative;
         width: 260px;
        height: 320px;
         background-color: white;
-        border: 2px solid #ececec;
+        border: 2px solid $sectionTitleWhiteSmoke2;
         box-shadow: $shadow;
         // border-radius: 10px;
         // z-index: -1;

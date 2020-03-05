@@ -25,43 +25,10 @@
                                 <h6 id="cart-items"></h6>
                                 <div id="shopping-cart">
                                     <p>Your shopping cart</p>
-                                    <ul id="shopping-list">                    
+                                    <ul id="shopping-list">
                                     </ul>
                                     <p id="total-price">Total:</p>
                                 </div>
-                                <!-- <table id="shopping-cart">
-                                <thead>
-                                    <tr>
-                                      <th colspan="5">
-                                      Your shopping cart  
-                                  </th>    
-                                    </tr>
-                                                                   
-                                </thead>
-                           <tbody>
-                               <tr class="tr-product">
-                                   <td class="td-image"><img src="https://www.cheaperthandirt.com/dw/image/v2/BDCK_PRD/on/demandware.static/-/Sites-ctd-master-catalog/default/dwe5eb9e65/large/2-ea610066.jpg?sw=146&sh=146" alt="EAA Witness Gold Custom Xtreme Single Action Semi Automatic Pistol 9mm Luger 5.25 Barrel 17 Rounds Fully Equipped Custom Shop Firearm Two Toned Ceramic Coating"></td>
-                                   <td class="td-name">
-                                    <h5>EAA</h5>
-                                    <h6>Pistol</h6>
-                                   </td>
-                                   <td class="td-number-of-items">
-                                       <button id="minus">-</button>
-                                       <p id="items-number">1</p>
-                                       <button id="plus">+</button>
-                                   </td>
-                                   <td class="td-price">$5,088.20</td>
-                                   <td class="td-x"><Button>X</Button></td>
-                               </tr>
-                               <tr id="tr-total"> 
-                                   <td>Total</td>
-                                   <td></td>
-                                   <td></td>
-                                   <td>$5,088.20</td>
-                               </tr>
-                           </tbody> 
-                            </table> -->
-
 
                             </i> Your Cart</a></li>
                     <li class="first-header-list-items">
@@ -87,84 +54,61 @@
                     <nav id="dropdown-2" class="dropdown-content hide-list">
                         <a href="#">Shotgun Ammo</a>
                         <a href="#">Rifle Ammo</a>
-
-
                     </nav>
                 </div>
                 <div class="dropdown-menu menu-3">
                     <button id="button-3" class="dropdown-button">ACCESSORIES</button>
                     <nav id="dropdown-3" class="dropdown-content hide-list">
                         <a href="#">Belts & Holsters</a>
-                        <a href="#"> Eye & Ear Protection</a>
-                        <a href="#"> Optics & Scopes</a>
-
+                        <a href="#">Eye & Ear Protection</a>
+                        <a href="#">Optics & Scopes</a>
                     </nav>
                 </div>
-
-                <!-- <div class="dropdown-menu">
-                    <button id="button-4" class="dropdown-button">SALE</button>
-                    <nav id="dropdown-4" class="dropdown-content hide-list">
-                        <a href="#">Firearms on sale</a>
-                        <a href="#">Ammunition on sale</a>
-                        <a href="#">Accessories on sale</a>
-
-                    </nav>
-                </div> -->
-
-
             </div>
         </header>
         <div id="overview-content">
             <div id="filter">
                 <div id="filter-card">
                     <p>FILTER RESULTS</p>
-                </div>
+                    <label for="price-filter">Maximum price range</label>
+                    <div>
+                        <p id="min-price" class="price-range"></p>
+                        <input type="range" min="0" max="1" id="price-filter">
+                        <p id="max-price" class="price-range"></p>
+                    </div>
+                    <div id="brands-filter">Brands
+                                              
+                    </div>
 
+                </div>
             </div>
             <div id="browse">
                 <div id="browsing">
-                   <!-- <p>Browsing products</p> -->
-                <div id="change-filter">
-                    <div id="sort-by-field" class="fields">
-                        <label for="sort-by">Sort by</label>
-                        <select name="sort" id="sort-by">
-                            <option value="">Select</option>
-                            <option value="PLH">Price: Ascending</option>
-                            <option value="PHL">Price: Descending</option>
+                    <div id="change-filter">
+                        <div id="sort-by-field" class="fields">
+                            <label for="sort-by">Sort by</label>
+                            <select name="sort" id="sort-by">
+                                <option value="">Select</option>
+                                <option value="PLH">Price: Ascending</option>
+                                <option value="PHL">Price: Descending</option>
                             </select>
+                        </div>
+                        <div id="results-field" class="fields">
+                            <label for="results-per-page">Results per page</label>
+                            <select name="results" id="results-per-page">
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="120">120</option>
+                            </select>
+                        </div>
+                        <button class="fields-btn" id="previous-products">Previous page</button>
+                        <button class="fields-btn" id="next-products">Next page</button>
                     </div>
-                    <div id="results-field" class="fields">
-                        <label for="results-per-page">Results per page</label>
-                        <select name="results" id="results-per-page">
-                            <option value="6">6</option>
-                            <option value="12">12</option>
-                            <option value="120">120</option>
-                        </select>
-                    </div>
-                    <button class="fields-btn" id="previous-products">Previous page</button>
-                    <button class="fields-btn" id="next-products">Next page</button>
-                    <!-- <div>
-          <div id="sort-by-field1">
-            <label for="sort-by1">Sort by</label>
-            <select name="sort" id="sort-by1">
-                <option value="PLH">Price: Ascending</option>
-                <option value="PHL">Price: Descending</option>
-                <option value="B">Brand: A-Z</option>
-                <option value="B">Brand: Z-A</option>
-            </select> 
-          </div>
-          <div id="results-count"></div>
-      </div> -->
-
-                </div> 
                 </div>
-                
+
                 <div id="user-cards">
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <footer id="footer">
@@ -201,13 +145,12 @@
         <div id="product-page">
             <div id="product-details">
                 <div id="product-images">
-                    <div id="large-image">                        
+                    <div id="large-image">
                     </div>
-                     
-                <div id="small-images">                   
+                    <div id="small-images">
+                    </div>
                 </div>
-                </div>
-               <div id="product-description">                  
+                <div id="product-description">
                 </div>
             </div>
             <div class="product-name-card">
@@ -219,7 +162,6 @@
             </div>
         </div>
     </div>
-    <!-- </div> -->
     <script src="/Products overview/productsOverview.js"></script>
 </body>
 
