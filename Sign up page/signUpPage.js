@@ -16,11 +16,9 @@ const eyeIconButton = document.getElementById("eye-icon")
 eyeIconButton.addEventListener("click", showPassword);
  function showPassword () {
      const eyeIcon = document.getElementById("eyeIcon")
-    // const passwordField = document.getElementById("password");
     if (password.getAttribute("type") === "password") {
          password.setAttribute("type", "text");
          eyeIcon.classList.replace("fa-eye-slash", "fa-eye")
-        //  console.log(password)
     } else {
          password.setAttribute("type", "password");
          eyeIcon.classList.replace("fa-eye", "fa-eye-slash")
@@ -50,7 +48,6 @@ function createUserAccount(e) {
     if(userAccount.firstName !== "", userAccount.lastName !== "" && userAccount.emailAddress !== "" && userAccount.password !== "" && userAccount.city !== "" && userAccount.country !== ""){
          userDatabase.push(userAccount); 
          console.log(userDatabase);
-        //  redirectToHomepage();
     } 
     else {
         document.querySelectorAll(".field1 .field-input").forEach((field) => {

@@ -914,9 +914,7 @@ function createUserCard(obj) {
     <button class="add-to-cart">ADD TO CART</button>
 </div>`
 }
-// for (product of productsForCards) {
-//   createUserCard(product);
-// }
+
 for (var i = 1; i <= 6; i++) {
   createUserCard(productsForCards[i]);
 }
@@ -933,7 +931,6 @@ const productPrice = document.getElementById("product-price");
 userCards.addEventListener("click", getProductPage);
 function getProductPage(e) {
   if (e.target.innerText === "SEE DETAILS") {
-    // console.log("aha!")
     largeImage.innerHTML = "";
     smallImages.innerHTML = "";
     productDescription.innerHTML = "";
@@ -941,7 +938,6 @@ function getProductPage(e) {
     const cardTarget = e.target.parentNode.parentNode;
     productsForDisplay.find((obj) => {
       if (obj.id === cardTarget.id) {
-        // console.log(obj)   
         document.querySelector(".product-name-card").setAttribute("id", `${obj.id}`)
         largeImage.innerHTML = `<img src=${obj.images.large[0].url} alt=${obj.images.large[0].alt} class="large-image">`;
         obj.images.small.forEach((image) => {
@@ -966,17 +962,12 @@ function getProductPage(e) {
       }
     })
   }
-  // console.log(productPage);
-
 }
 productContainer.addEventListener("click", exitProductPage)
 function exitProductPage(e) {
-  // e.preventDefault()
   if (e.target == e.currentTarget) {
     productContainer.style.display = "none";
   }
-
-  // console.log(e.target, e.currentTarget)
 }
 userCards.addEventListener("click", addToCart);
 const cartItemsNumber = document.getElementById("cart-items");
@@ -993,29 +984,13 @@ function transformNumber(num) {
 
 function addToCart(e) {
   console.log(shoppingList.children);
-
-  // for (listItemAdded of shoppingList.children) {
-  //   if 
-  // }
   if (e.target.innerText === "ADD TO CART") {
     console.log(e.target.parentNode.parentNode);
     cartItemsCounter++;
     cartItemsNumber.style.visibility = "visible";
     cartItemsNumber.innerText = `${cartItemsCounter}`;
     var cardTarget = e.target.parentNode.parentNode;
-    // console.log(cardTarget);
-    // var cartRows = document.getElementsByClassName("shopping-list-item")
-    // console.log(cartRows[0])
-    // var cartRows = shoppingList.querySelectorAll(".shopping-list-item") 
-    // console.log(cartRows[0].getAttribute("id"))
-    //   for (var i = 0; i <= cartRows.length; i++) {
-    // if (cardTarget.id === cartRows[i].getAttribute("id")) {
-    //   console.log(cartRows[i])
-    // }
-    //   }
-    // console.log(e.target.innerText)
-
-    productsForDisplay.find((obj) => {
+        productsForDisplay.find((obj) => {
       if (obj.id === cardTarget.id) {
         var price = transformNumber(Number(obj.price.value));
         const listItem = document.createElement("li");
@@ -1056,10 +1031,8 @@ function removeFromCart(e) {
 shoppingList.addEventListener("input", multiplyPrice);
 
 function multiplyPrice(e) {
-  // console.log(Number(e.target.previousElementSibling.children[1].getAttribute("value")));
   var price = Math.round(Number(e.target.previousElementSibling.children[1].getAttribute("value")) * e.target.value * 100) / 100
   var priceMultiplied = transformNumber(price);
-  // console.log(e.target.nextElementSibling)
   e.target.nextElementSibling.innerText = `${'$' + priceMultiplied}`
   updateCartTotal()
 }
@@ -1130,11 +1103,8 @@ for (obj of productsForDisplay) {
   let price = obj.price.value;
   priceArr.push(price)
 }
-// console.log(priceArr)
-// console.log(...priceArr)
 var minPrice = Math.min(...priceArr)
 var maxPrice = Math.max(...priceArr)
-// console.log(minPrice, maxPrice, displayMax)
 priceRange.addEventListener("change", filterByPrice)
 priceRange.setAttribute("min", `${minPrice}`)
 priceRange.setAttribute("max", `${maxPrice}`)
@@ -1142,14 +1112,11 @@ priceRange.setAttribute("value", `${maxPrice}`)
 displayMin.innerText = `${'$' + minPrice}`
 displayMax.innerText = `${'$' + maxPrice}`
 function filterByPrice (){
-// console.log(priceRange.value)
 productsByPrice = productsForDisplay.filter(obj => obj.price.value < priceRange.value);
-// console.log(productsForDisplay)
 indexPage = 0;
 resultsPerPage(productsByPrice);
-// productsForDisplay = productsByPrice;
 }
-// 
+
 const brandArr = [];
 for (obj of productsForDisplay) {
   brandArr.push(obj.brand)
@@ -1157,7 +1124,6 @@ for (obj of productsForDisplay) {
 }
 const brands = [...new Set(brandArr)].sort();
 const brandsFilter = document.getElementById("brands-filter")
-console.log(brands)
 for(brand of brands){
   var brandOption = document.createElement("div")
   brandOption.innerHTML = `<input type="checkbox" name="brand" id=${brand}> <label for=${brand}>${brand}</label>`
@@ -1165,15 +1131,18 @@ for(brand of brands){
 }
 brandsFilter.addEventListener("change", filterBrands)
 function filterBrands (e){
-  for (input of document.querySelectorAll("#brands-filter input")) {
-    if(input.checked == true){
-      console.log(input)
-      // var productsByBrand = 
+  const inputs = document.querySelectorAll("#brands-filter input")
+var concatBrands = "";
+  for (input of inputs) {
+    if(input.checked === true){
+      concatBrands = concatBrands + " " + input.nextElementSibling.innerText
     }
   }
-//   console.log(document.querySelectorAll("#brands-filter input")) 
-// console.log(e.target.value)
+  const productsByBrand = productsForDisplay.filter(obj1 => concatBrands.includes(obj1.brand));
+indexPage = 0;
+resultsPerPage(productsByBrand);
 }
+
 
 
 document.getElementById("previous-products").addEventListener("click", seePreviousProducts)
@@ -1195,23 +1164,3 @@ function seeNextProducts() {
   }
 
 }
-
-// const sortBy = document.getElementById("sort-by")
-// // sortBy.addEventListener("click", sortCards);
-
-// function sortAlphabetically (arr = productsForCards) {
-// //   arr.sort(function(a, b){
-// //   return a.brand > b.brand;
-// // });
-// arr.sort((a, b) => {
-//   if (a.name < b.name) {return -1}  
-//   else {return a.brand > b.brand ? 1 : 0}  
-// })
-// }
-// const test2 = function sortNumbers (arr = productsForCards){
-// arr.sort(function (a, b) {
-//   return Number(a.price.value) - Number(b.price.value);
-// });
-// }
-
-// console.log(sortAlphabetically(productsForCards))

@@ -14,126 +14,115 @@
 
 <body>
     <div id="page-container">
-    <header>
-        <div id="first-header" class="flex">
-            <div id="website-logo" class="flex">
-                <img id="logo" src="https://static.thenounproject.com/png/795891-200.png" />
-                <p>Toys R +</p>
-            </div>
-            <ul id="first-header-list">
-                <li class="first-header-list-items">
+        <header>
+            <div id="first-header" class="flex">
+                <div id="website-logo" class="flex">
+                    <img id="logo" src="https://static.thenounproject.com/png/795891-200.png" />
+                    <p>Toys R +</p>
+                </div>
+                <ul id="first-header-list">
+                    <li class="first-header-list-items">
 
-                    <a href="#index"><i class="fas fa-shopping-cart"></i> Your Cart</a></li>
-                <li class="first-header-list-items">
-                    <a href="../Sign up page/signUpPage.html">
-                        <i class="fas fa-user-circle"></i> Register
-                    </a></li>
-                <li class="first-header-list-items">
-                    <a href="../Sign up page/logInPage.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-            </ul>
-        </div>
-        <div id="second-header">
-            <div class="dropdown-menu" id="menu-1">
-                <button id="button-1" class="dropdown-button">FIREARMS</button>
-                <nav id="dropdown-1" class="dropdown-content hide-list">
-                    <a href="#">Handguns</a>
-                    <a href="#">Rifles</a>
-                    <a href="#">Shotguns</a>
-                    <a href="#">Revolvers</a>
-              </nav>
+                        <a href="#index"><i class="fas fa-shopping-cart"></i> Your Cart</a></li>
+                    <li class="first-header-list-items">
+                        <a href="../Sign up page/signUpPage.html">
+                            <i class="fas fa-user-circle"></i> Register
+                        </a></li>
+                    <li class="first-header-list-items">
+                        <a href="../Sign up page/logInPage.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                </ul>
             </div>
-            <div class="dropdown-menu" id="menu-2">
-                <button id="button-2" class="dropdown-button">AMMUNITION</button>
-                <nav id="dropdown-2" class="dropdown-content hide-list">
-                    <a href="#">Shotgun Ammo</a>
-                    <a href="#">Rifle Ammo</a>
-                </nav>
+            <div id="second-header">
+                <div class="dropdown-menu" id="menu-1">
+                    <button id="button-1" class="dropdown-button">FIREARMS</button>
+                    <nav id="dropdown-1" class="dropdown-content hide-list">
+                        <a href="#">Handguns</a>
+                        <a href="#">Rifles</a>
+                        <a href="#">Shotguns</a>
+                        <a href="#">Revolvers</a>
+                    </nav>
+                </div>
+                <div class="dropdown-menu" id="menu-2">
+                    <button id="button-2" class="dropdown-button">AMMUNITION</button>
+                    <nav id="dropdown-2" class="dropdown-content hide-list">
+                        <a href="#">Shotgun Ammo</a>
+                        <a href="#">Rifle Ammo</a>
+                    </nav>
+                </div>
+                <div class="dropdown-menu" id="menu-3">
+                    <button id="button-3" class="dropdown-button">ACCESSORIES</button>
+                    <nav id="dropdown-3" class="dropdown-content hide-list">
+                        <a href="#">Belts & holsters</a>
+                        <a href="#"> Eye & ear protection</a>
+                        <a href="#"> Optics & scopes</a>
+                    </nav>
+                </div>
             </div>
-            <div class="dropdown-menu" id="menu-3">
-                <button id="button-3" class="dropdown-button">ACCESSORIES</button>
-                <nav id="dropdown-3" class="dropdown-content hide-list">
-                    <a href="#">Belts & holsters</a>
-                    <a href="#"> Eye & ear protection</a>
-                    <a href="#"> Optics & scopes</a>
-                </nav>
-            </div>
-            <!-- <div class="dropdown-menu" id="menu-4">
-                <button id="button-4" class="dropdown-button">SALE</button>
-                <nav id="dropdown-4" class="dropdown-content hide-list">
-                    <a href="#">Firearms</a>
-                    <a href="#">Ammunition</a>
-                    <a href="#">Accessories</a>
-                </nav>
-            </div> -->
-        </div>
-    </header>
+        </header>
 
-    <div id="landing-content">
-        <div id="moving-hero">
-            <div class="overlay flex">
-                <div class="hero-content flex">
-                    <h3>Your ultimate marketplace for target shooting and hunting gear</h3>
-                    <p>Search through dozens of new arrivals</p>
-                    <div id="search-section" class="flex">
-                        <input type="text" id="hero-search">
-                        <button type="button" id="hero-button" class="hero-button">SEARCH</button>
+        <div id="landing-content">
+            <div id="moving-hero">
+                <div class="overlay flex">
+                    <div class="hero-content flex">
+                        <h3>Your ultimate marketplace for target shooting and hunting gear</h3>
+                        <p>Search through dozens of new arrivals</p>
+                        <div id="search-section" class="flex">
+                            <input type="text" id="hero-search">
+                            <button type="button" id="hero-button" class="hero-button">SEARCH</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div id="semi-display">
+
+            <div id="semi-display">
                 <p>NEW ARRIVALS</p>
                 <div id="products-grid"></div>
-        </div>
-        <div id="carousel" class="flex">
-            <div class="carousel-arrows flex">
-                <button id="arrow-left" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
             </div>
-            <div id="product-cards"></div>
-            <div class="carousel-arrows flex">
-                <button id="arrow-right" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
+            <div id="carousel" class="flex">
+                <div class="carousel-arrows flex">
+                    <button id="arrow-left" onclick="plusSlides(-1)"><i class="fas fa-angle-left"></i></button>
+                </div>
+                <div id="product-cards"></div>
+                <div class="carousel-arrows flex">
+                    <button id="arrow-right" onclick="plusSlides(1)"><i class="fas fa-angle-right"></i></button>
+                </div>
+
             </div>
 
+            <footer id="footer">
+                <div id="first-footer" class="flex">
+                    <p>Start your 30-day free trial today</p>
+                    <button class="green-button">TAKE A SHOT</button>
+                </div>
+                <div id="second-footer" class="flex">
+                    <p>2019 The Website, Inc.</p>
+                    <div class="footer-block">
+                        <p>ABOUT</p>
+                        <a href="#index.html">Team</a>
+                        <a href="#index.html">Jobs</a>
+                        <a href="#index.html">Blog</a>
+                        <a href="#index.html">Press</a>
+                    </div>
+                    <div class="footer-block">
+                        <p>HELP</p>
+                        <a href="#index.html">FAQ</a>
+                        <a href="#index.html">Security</a>
+                        <a href="#index.html">Terms of service</a>
+                        <a href="#index.html">Privacy policy</a>
+                    </div>
+                    <div class="footer-block">
+                        <p>CONNECT</p>
+                        <a href="#index.html">Facebook</a>
+                        <a href="#index.html">Youtube</a>
+                        <a href="#index.html">Twitter</a>
+                        <a href="#index.html">Instagram</a>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- <div id="small-hero"></div> -->
-        
-     <footer id="footer">
-        <div id="first-footer" class="flex">
-            <p>Start your 30-day free trial today</p>
-            <button class="green-button">TAKE A SHOT</button>
-        </div>
-        <div id="second-footer" class="flex">          
-                <p>2019 The Website, Inc.</p>         
-            <div class="footer-block">
-               <p>ABOUT</p> 
-                <a href="#index.html">Team</a>
-                <a href="#index.html">Jobs</a>
-                <a href="#index.html">Blog</a>
-                <a href="#index.html">Press</a>
-            </div>
-            <div class="footer-block">
-               <p>HELP</p> 
-                <a href="#index.html">FAQ</a>
-                <a href="#index.html">Security</a>
-                <a href="#index.html">Terms of service</a>
-                <a href="#index.html">Privacy policy</a>
-            </div>
-            <div class="footer-block">
-               <p>CONNECT</p> 
-                <a href="#index.html">Facebook</a>
-                <a href="#index.html">Youtube</a>
-                <a href="#index.html">Twitter</a>
-                <a href="#index.html">Instagram</a>
-            </div>
-        </div>
-    </footer>
-</div>
-   
-    <!-- <div id="testing"></div> -->
-    <script src="header.js"></script>
-    <script src="content.js"></script>
-    <!-- <script src="./userCards.js"></script> -->
+        <script src="header.js"></script>
+        <script src="content.js"></script>
+
 
 </body>
 

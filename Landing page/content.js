@@ -703,16 +703,11 @@ longDescription: "Silver Bear ammo is high quality ammo features distinctive, hi
     ]
   }}
 ];
-// console.log(productsForCards)
 const secondHeader = document.getElementById("second-header");
-// console.log(secondHeader);
 secondHeader.addEventListener("click", (e) => {
   if (e.target !== e.currentTarget) {
     window.location.href = "../Products overview/productsOverview.html";
-  //   console.log(e.target);
-  // console.log(e.currentTarget)
   }  
-  // e.stopPropagation();
   });
 
 
@@ -739,7 +734,7 @@ function searchProducts(){
     if(product.productName.includes(searchWord.value)  ||  product.productName.toLowerCase().includes(searchWord.value)){
       createUserCard(product, userCardsGrid)
       
-      // console.log(product.productName.toLowerCase())
+      
     }
   }
    searchWord.value = "";
@@ -756,25 +751,7 @@ function searchProductsEnter(e){
 var userCardsCarousel = document.getElementById("product-cards")
 for (product of productsForCards) {
   createUserCard(product, userCardsCarousel);
-  // userCardsCarousel.firstElementChild.style.display = "flex";
   }
-// document.getElementById("carousel").addEventListener("click", swipeCarousel);
-// const arrowLeft = document.getElementById("arrow-left");
-// const arrowRight = document.getElementById("arrow-right");
-// function swipeCarousel () {
-// if (event.target === arrowRight) {
-// i += 1;
-// userCards.innerHTML = "";
-// createUserCard(productsForCards[i]);
-// }
-// }
-
-// const arrowLeft = document.getElementById("arrow-left")
-// const arrowRight = document.getElementById("arrow-right")
-
-// arrowLeft.addEventListener("click", plusSlides(-1));
-// arrowRight.addEventListener()
-
 var slideIndex = 1;
 showSlides(slideIndex);
 

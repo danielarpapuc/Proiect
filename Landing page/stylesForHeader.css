@@ -86,7 +86,8 @@
 #first-header ul li a i #shopping-cart {
   position: absolute;
   display: none;
-  width: 33vw;
+  width: 40vw;
+  right: -400px;
   background-color: white;
   z-index: 10;
   -webkit-box-shadow: -5px 10px 18px black;
@@ -109,10 +110,17 @@
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 2px solid #acbbcb;
+}
+
+#first-header ul li a i #shopping-cart ul li * {
+  padding: 0px 10px;
 }
 
 #first-header ul li a i #shopping-cart ul li img {
@@ -120,15 +128,19 @@
   height: 20%;
 }
 
-#first-header ul li a i #shopping-cart ul li p {
-  font-size: 75%;
+#first-header ul li a i #shopping-cart ul li .product-name {
+  width: 200px;
 }
 
 #first-header ul li a i #shopping-cart ul li .number-of-products {
   width: 30px;
 }
 
-#first-header ul li a i #shopping-cart ul li button {
+#first-header ul li a i #shopping-cart ul li .product-price-total {
+  font-size: 75%;
+}
+
+#first-header ul li a i #shopping-cart ul li .remove-from-cart {
   border-radius: 50%;
   border: none;
   background-color: transparent;
@@ -136,7 +148,7 @@
   font-weight: bold;
 }
 
-#first-header ul li a i #shopping-cart ul li button:hover {
+#first-header ul li a i #shopping-cart ul li .remove-from-cart:hover {
   color: black;
   cursor: pointer;
 }

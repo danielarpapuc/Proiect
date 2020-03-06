@@ -7,15 +7,11 @@
         justify-content: space-evenly;
         background-color: $headerDark;
         color: $headerLight;
-// p {}
 button {
     @include greenButton;
 }
     }
     #second-footer {
-        // * {
-        //     border: 1px solid red;
-        // }
         padding-bottom: 10px;
         box-sizing: content-box;
         @include displayFlex(row);

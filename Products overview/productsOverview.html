@@ -70,13 +70,16 @@
             <div id="filter">
                 <div id="filter-card">
                     <p>FILTER RESULTS</p>
-                    <label for="price-filter">Maximum price range</label>
+                    <div class="filter">
+                       <label for="price-filter">Maximum price range</label>
                     <div>
                         <p id="min-price" class="price-range"></p>
                         <input type="range" min="0" max="1" id="price-filter">
                         <p id="max-price" class="price-range"></p>
+                    </div> 
                     </div>
-                    <div id="brands-filter">Brands
+                    
+                    <div id="brands-filter" class="filter">Brands
                                               
                     </div>
 
@@ -85,14 +88,7 @@
             <div id="browse">
                 <div id="browsing">
                     <div id="change-filter">
-                        <div id="sort-by-field" class="fields">
-                            <label for="sort-by">Sort by</label>
-                            <select name="sort" id="sort-by">
-                                <option value="">Select</option>
-                                <option value="PLH">Price: Ascending</option>
-                                <option value="PHL">Price: Descending</option>
-                            </select>
-                        </div>
+                        
                         <div id="results-field" class="fields">
                             <label for="results-per-page">Results per page</label>
                             <select name="results" id="results-per-page">
